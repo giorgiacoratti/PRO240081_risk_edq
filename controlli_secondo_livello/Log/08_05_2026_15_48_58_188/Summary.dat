@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test2">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="TC0011_PUT_SubSectionAnswers"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="starttime" type="D" value="46150.6590224884"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAzADEAMwBDADUANgAwADYALQBCAEYAQwA5AC0ANABFADYAMQAtAEEAMwBBADcALQA3AEEARAAzAEIAOQBEAEEANQA4ADAAMQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="duration" type="I" value="563"/>
+						<Prp name="durationwithoutchildren" type="I" value="563"/>
+					</Node>
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="TC0024_GET_SummariesAnswers"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="starttime" type="D" value="46150.659017662"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBGADQARAAwAEQANgBDADYALQA0AEQARABGAC0ANABCADYANgAtAEEANAAxADUALQA3AEUAOQAxADgAMQA4AEEANQAxAEIANAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="duration" type="I" value="207"/>
+						<Prp name="durationwithoutchildren" type="I" value="207"/>
+					</Node>
+					<Node name="test1">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="TC0010_PUT_SubSectionQuestions"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="starttime" type="D" value="46150.6590201389"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA5AEIANwA5ADgANAAyAEMALQA0AEEAQQBGAC0ANABGADcARQAtADgAMgA0AEQALQA0ADYAQgA5ADYAOABFAEYANwA2AEYAMAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="duration" type="I" value="193"/>
+						<Prp name="durationwithoutchildren" type="I" value="193"/>
+					</Node>
+					<Node name="test3">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="TC0020_GET_SummariesSubSection"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="starttime" type="D" value="46150.659007037"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBCADcANwA4ADYAMQA1ADUALQA1ADQARQBCAC0ANAA0ADUAQQAtADkARQAxADgALQBBADUAQwBDADQAOABFADMARQBFADYAQwB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="duration" type="I" value="1909"/>
+						<Prp name="durationwithoutchildren" type="I" value="946"/>
+					</Node>
+				</Node>
+				<Prp name="loadtests" type="I" value="0"/>
+				<Prp name="name" type="S" value="controlli_secondo_livello"/>
+				<Prp name="failedtests" type="I" value="0"/>
+				<Prp name="incompletedtests" type="I" value="0"/>
+				<Prp name="starttime" type="D" value="46150.659007037"/>
+				<Prp name="duration" type="I" value="1909"/>
+				<Prp name="warningtests" type="I" value="0"/>
+			</Node>
+		</Node>
+		<Prp name="warningtests" type="I" value="0"/>
+		<Prp name="tests" type="I" value="4"/>
+		<Prp name="stop" type="D" value="46150.6590303125"/>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+		<Prp name="starttime" type="D" value="46150.6590069444"/>
+		<Prp name="name" type="S" value="PRO240081_risk_edq"/>
+		<Prp name="user" type="S" value="gcoratti"/>
+		<Prp name="testname" type="S" value="controlli_secondo_livello: summaries\TC0020_GET_SummariesSubSection"/>
+		<Prp name="executionstatus" type="I" value="0"/>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+		<Prp name="loadtests" type="I" value="0"/>
+		<Prp name="key" type="S" value="{09F61578-227F-4EEF-AE43-7CFBC9F51919}"/>
+		<Prp name="incompletedtests" type="I" value="0"/>
+		<Prp name="host" type="S" value="8NY1HS3-A081"/>
+		<Prp name="failedtests" type="I" value="0"/>
+	</Node>
+</Nodes>

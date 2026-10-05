@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="duration" type="I" value="3052"/>
+						<Prp name="starttime" type="D" value="46150.6604810185"/>
+						<Prp name="name" type="S" value="TC0017_POST_SummariesExport"/>
+						<Prp name="durationwithoutchildren" type="I" value="3052"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBBADQANwBCADkAMwBEAEIALQA4ADYAMAA2AC0ANAA4ADQARQAtAEEAMQBFADAALQAwAEYARAAzAEMAOQA3AEQARgA1ADkAMgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="0"/>
+					</Node>
+				</Node>
+				<Prp name="starttime" type="D" value="46150.6604810185"/>
+				<Prp name="duration" type="I" value="3052"/>
+				<Prp name="name" type="S" value="controlli_secondo_livello"/>
+				<Prp name="warningtests" type="I" value="0"/>
+				<Prp name="incompletedtests" type="I" value="0"/>
+				<Prp name="failedtests" type="I" value="0"/>
+				<Prp name="loadtests" type="I" value="0"/>
+			</Node>
+		</Node>
+		<Prp name="user" type="S" value="gcoratti"/>
+		<Prp name="incompletedtests" type="I" value="0"/>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+		<Prp name="starttime" type="D" value="46150.6604809375"/>
+		<Prp name="host" type="S" value="8NY1HS3-A081"/>
+		<Prp name="name" type="S" value="PRO240081_risk_edq"/>
+		<Prp name="testname" type="S" value="controlli_secondo_livello: summaries\TC0017_POST_SummariesExport"/>
+		<Prp name="tests" type="I" value="1"/>
+		<Prp name="stop" type="D" value="46150.6605174306"/>
+		<Prp name="warningtests" type="I" value="0"/>
+		<Prp name="key" type="S" value="{0E64E980-9B34-469B-A570-B25319E55A40}"/>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+		<Prp name="failedtests" type="I" value="0"/>
+		<Prp name="loadtests" type="I" value="0"/>
+		<Prp name="executionstatus" type="I" value="0"/>
+	</Node>
+</Nodes>

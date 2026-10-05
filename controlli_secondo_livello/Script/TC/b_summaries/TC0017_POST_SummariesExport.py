@@ -1,0 +1,47 @@
+﻿## Descrizione: Lanciare POST /v1/riskaudit/summaries/export con request body SearchParameters e parametro di query obbligatorio
+## Risultato atteso: 200 OK con response body un application/octet-stream
+
+## Descrizione: 
+
+import utils, constants, json, summaries
+
+expected_status_code = constants.OK_200
+body_file_path = './TestData/requests/body/TC0017_post_summaries_export.json'
+query_param_file_path = './TestData/requests/query_parameters/TC0017_post_summaries_export.json'
+
+def TC0017_POST_SummariesExport():
+  
+  ## Importo le project variables, estraggo il body dal file .json e lo converto in obj per verificarne il formato 
+  Log.Message('--- STEP 0: Estrazione dei query parameters dal file '+query_param_file_path+', estraggo il body dal file '+body_file_path+' ---')
+    
+  body_obj = utils.JSON_file_to_obj(body_file_path)
+  
+  query_param_obj = utils.JSON_file_to_obj(query_param_file_path)  
+  query_string = utils.obj_to_query_string(query_param_obj)
+
+  ## Chiamo il servizio
+  Log.Message('--- STEP 1: Chiamata al servizio')
+  
+  Log.Message('Request body: '+json.dumps(body_obj, default=str, indent=4))
+  
+  resp = summaries.POST_summaries_export(body_obj, '?'+query_string)
+  
+  ## Verifico e leggo lo status code 
+  if resp.StatusCode != expected_status_code:
+    if resp.Text:
+      Log.Warning('Messaggio di errore: '+resp.Text)
+    Log.Error('Response status NON CORRETTO. Lo status PREVISTO era: '+str(expected_status_code))
+  else:
+    Log.Message('Response status CORRETTO.')
+    
+    ## Verifico la response: verifico che il contenuto restituito dal servizio sia type application/octet-stream 
+    Log.Message('--- STEP 1.a: verifico la response ---')
+    
+    if resp.AllHeaders != None:
+      if 'application/octet-stream' not in resp.AllHeaders:
+        Log.Error('Il Content-Type della response non è application/octet-stream come atteso')
+      else:
+        Log.Message('Il servizio ha restituito un application/octet-stream')
+        
+      if resp.Text != '':
+        Log.Message('Il servizio ha restituito la stringa '+resp.Text)

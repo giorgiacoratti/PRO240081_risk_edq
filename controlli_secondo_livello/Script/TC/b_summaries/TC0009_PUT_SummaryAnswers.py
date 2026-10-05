@@ -1,0 +1,68 @@
+﻿## Descrizione: Lanciare PUT /v1/riskaudit/summaries/{summaryId}/answers con request body SummaryUpdateDTO
+## Risultato atteso: 200 OK con response body SummaryUpdateDTO
+
+## Prerequisito: TC0015 ( summaries_id ) 
+
+import utils, constants, json, summaries, summaries_response_schemas
+
+expected_status_code = constants.OK_200
+body_file_path = './TestData/requests/body/TC0009_put_summary_answers.json'
+query_param_file_path = './TestData/requests/query_parameters/TC0009_put_summary_answers.json'
+
+def TC0009_PUT_SummaryAnswers():
+  
+  ## Importo le project variables, estraggo il body dal file .json e lo converto in obj per verificarne il formato 
+  Log.Message('--- STEP 0: Estraggo il body dal file '+body_file_path+' e importo le project variables ---')
+  
+  if Project.Variables.summaries_id:
+    summaries_id = Project.Variables.summaries_id
+  else: 
+    Log.Error('summaries_id non presente tra le project variables, verificare!')
+    
+  body_obj = utils.JSON_file_to_obj(body_file_path)
+    
+  ## Importo le project variables che mi servono per compiare il request body
+  if Project.Variables.question_id and Project.Variables.answer_id:
+    body_obj['answers'][0]['answerId'] = Project.Variables.answer_id
+    body_obj['answers'][0]['questionId'] = Project.Variables.question_id
+  else:
+    Log.Error('question_id o answer_id non presente tra le project variables, verificare!')
+    
+  query_param_obj = utils.JSON_file_to_obj(query_param_file_path)  
+  query_string = utils.obj_to_query_string(query_param_obj)
+
+  ## Chiamo il servizio
+  Log.Message('--- STEP 1: Chiamata al servizio')
+  
+  Log.Message('Request body: '+json.dumps(body_obj, default=str, indent=4))
+  
+  resp = summaries.PUT_summary_answers(body_obj, summaries_id, '?'+query_string)
+  
+  ## Verifico e leggo lo status code 
+  if resp.StatusCode != expected_status_code:
+    if resp.Text:
+      Log.Warning('Messaggio di errore: '+resp.Text)
+    Log.Error('Response status NON CORRETTO. Lo status PREVISTO era: '+str(expected_status_code))
+  else:
+    Log.Message('Response status CORRETTO.')
+    
+    ## Verifico la response validandola contro lo schema atteso 
+    ## Se sono presenti dati li salvo in variabili locali e li loggo 
+    Log.Message('--- STEP 2: Validazione della response')
+    
+    if resp.Text == '':
+      Log.Error('La response non contiene un body')
+    else:
+      response_body_dict = json.loads(resp.Text)
+    
+      schema = summaries_response_schemas.SummaryUpdateDTO
+    
+      if not utils.validate(schema, response_body_dict):
+        Log.Warning('La risposta del servizio NON rispetta lo schema atteso, verificare')
+        Log.Warning('Response body: '+json.dumps(response_body_dict, default=str, indent=4))
+        Log.Warning('Schema atteso: '+json.dumps(schema, default=str, indent=4))
+        
+      else:
+        
+        Log.Message('La response del servizio rispetta lo schema atteso SummaryUpdateDTO')        
+        Log.Message('Item restituito: '+json.dumps(response_body_dict, default=str, indent=4))

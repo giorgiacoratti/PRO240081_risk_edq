@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 0">
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="14"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="message" type="S" value="--- STEP 0: Estrazione dei query parameters dal file ./TestData/requests/query_parameters/TC0005_post_heald_instruments_search_query.json, estraggo il body dal file ./TestData/requests/body/TC0007_post_template_a_search.json e importo le project variables ---"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="46155.4309879398"/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="line no" type="I" value="39"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="message" type="S" value="Response status CORRETTO."/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="46155.4309893403"/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="message" type="S" value="--- STEP 1: Chiamata al servizio"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="46155.4309881713"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="line no" type="I" value="30"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="message" type="S" value="Sending the 'POST' request to 'https://pwm-api.integrazione.servizi.allitude.it/v1/riskaudit/07078/templates/templateA/search'."/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="46155.430988287"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{DC83DFD2-5D7F-4BE7-8EF8-EB418328A585}"/>
+			<Prp name="unit 1" type="S" value="{4BCB0703-C08A-4F1B-BB67-E3051409EA3B}"/>
+		</Node>
+		<Node name="message 9">
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="line no" type="I" value="60"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="message" type="S" value="Item restituito: {&#xA;    &quot;data&quot;: [&#xA;        {&#xA;            &quot;id&quot;: 21692,&#xA;            &quot;date&quot;: &quot;2026-01-16&quot;,&#xA;            &quot;isin&quot;: &quot;IT0005274805&quot;,&#xA;            &quot;description&quot;: &quot;BTP-01AG27 2,05% 17/27&quot;,&#xA;            &quot;nozionale&quot;: &quot;3.000.000,00&quot;,&#xA;            &quot;ptf_htc&quot;: 0.0315,&#xA;            &quot;aCase&quot;: &quot;VT sog. a limite occas./ril.&quot;,&#xA;            &quot;frequency&quot;: {&#xA;                &quot;limit&quot;: 12,&#xA;                &quot;value&quot;: 3&#xA;            },&#xA;            &quot;significance&quot;: {&#xA;                &quot;limit&quot;: 12,&#xA;                &quot;value&quot;: 9&#xA;            },&#xA;            &quot;sell_percentage&quot;: 5.0&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 21694,&#xA;            &quot;date&quot;: &quot;2026-01-16&quot;,&#xA;            &quot;isin&quot;: &quot;IT0005413171&quot;,&#xA;            &quot;description&quot;: &quot;BTP-01DC30 1,65% 20/30 EUR&quot;,&#xA;            &quot;nozionale&quot;: &quot;3.000.000,00&quot;,&#xA;            &quot;ptf_htc&quot;: 0.0315,&#xA;            &quot;aCase&quot;: &quot;VT sog. a limite occas./ril.&quot;,&#xA;            &quot;frequency&quot;: {&#xA;                &quot;limit&quot;: 12,&#xA;                &quot;value&quot;: 3&#xA;            },&#xA;            &quot;significance&quot;: {&#xA;                &quot;limit&quot;: 12,&#xA;                &quot;value&quot;: 9&#xA;            },&#xA;            &quot;sell_percentage&quot;: 5.0&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 21693,&#xA;            &quot;date&quot;: &quot;2026-01-16&quot;,&#xA;            &quot;isin&quot;: &quot;PTOTELOE0028&quot;,&#xA;            &quot;description&quot;: &quot;PORTOGALLO 0,475% 20/30 EUR&quot;,&#xA;            &quot;nozionale&quot;: &quot;3.000.000,00&quot;,&#xA;            &quot;ptf_htc&quot;: 0.0315,&#xA;            &quot;aCase&quot;: &quot;VT sog. a limite occas./ril.&quot;,&#xA;            &quot;frequency&quot;: {&#xA;                &quot;limit&quot;: 12,&#xA;                &quot;value&quot;: 3&#xA;            },&#xA;            &quot;significance&quot;: {&#xA;                &quot;limit&quot;: 12,&#xA;                &quot;value&quot;: 9&#xA;            },&#xA;            &quot;sell_percentage&quot;: 5.0&#xA;        }&#xA;    ],&#xA;    &quot;total&quot;: 3&#xA;}"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="46155.4309894676"/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="line no" type="I" value="30"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="message" type="S" value="The 'POST' request to 'https://pwm-api.integrazione.servizi.allitude.it/v1/riskaudit/07078/templates/templateA/search' was sent with the status code 200."/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Response status text: OK&#xA;&#xA;Response body:&#xA;{&quot;data&quot;:[{&quot;id&quot;:21692,&quot;date&quot;:&quot;2026-01-16&quot;,&quot;isin&quot;:&quot;IT0005274805&quot;,&quot;description&quot;:&quot;BTP-01AG27 2,05% 17/27&quot;,&quot;nozionale&quot;:&quot;3.000.000,00&quot;,&quot;ptf_htc&quot;:0.0315,&quot;aCase&quot;:&quot;VT sog. a limite occas./ril.&quot;,&quot;frequency&quot;:{&quot;limit&quot;:12,&quot;value&quot;:3},&quot;significance&quot;:{&quot;limit&quot;:12,&quot;value&quot;:9},&quot;sell_percentage&quot;:5.0},{&quot;id&quot;:21694,&quot;date&quot;:&quot;2026-01-16&quot;,&quot;isin&quot;:&quot;IT0005413171&quot;,&quot;description&quot;:&quot;BTP-01DC30 1,65% 20/30 EUR&quot;,&quot;nozionale&quot;:&quot;3.000.000,00&quot;,&quot;ptf_htc&quot;:0.0315,&quot;aCase&quot;:&quot;VT sog. a limite occas./ril.&quot;,&quot;frequency&quot;:{&quot;limit&quot;:12,&quot;value&quot;:3},&quot;significance&quot;:{&quot;limit&quot;:12,&quot;value&quot;:9},&quot;sell_percentage&quot;:5.0},{&quot;id&quot;:21693,&quot;date&quot;:&quot;2026-01-16&quot;,&quot;isin&quot;:&quot;PTOTELOE0028&quot;,&quot;description&quot;:&quot;PORTOGALLO 0,475% 20/30 EUR&quot;,&quot;nozionale&quot;:&quot;3.000.000,00&quot;,&quot;ptf_htc&quot;:0.0315,&quot;aCase&quot;:&quot;VT sog. a limite occas./ril.&quot;,&quot;frequency&quot;:{&quot;limit&quot;:12,&quot;value&quot;:3},&quot;significance&quot;:{&quot;limit&quot;:12,&quot;value&quot;:9},&quot;sell_percentage&quot;:5.0}],&quot;total&quot;:3}&#xA;&#xA;All response headers:&#xA;Date: Wed, 13 May 2026 08:17:22 GMT&#xA;Transfer-Encoding: chunked&#xA;Content-Type: application/json&#xA;Server: istio-envoy&#xA;x-envoy-upstream-service-time: 16&#xA;&#xA;"/>
+			<Prp name="date" type="D" value="46155.4309891088"/>
+		</Node>
+		<Node name="message 7">
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="line no" type="I" value="43"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="message" type="S" value="--- STEP 2: Validazione della response"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="46155.4309893403"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="line no" type="I" value="29"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="message" type="S" value="Request body: {&#xA;    &quot;skip&quot;: 0,&#xA;    &quot;sort&quot;: [],&#xA;    &quot;take&quot;: 100,&#xA;    &quot;filter&quot;: {&#xA;        &quot;logic&quot;: &quot;and&quot;,&#xA;        &quot;filters&quot;: []&#xA;    }&#xA;}"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="46155.4309881713"/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="line no" type="I" value="35"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="message" type="S" value="Il servizio /v1/riskaudit/07078/templates/templateA/search ha risposto con status: 200 OK"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="46155.4309893403"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="child data"/>
+		<Node name="message 8">
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="line no" type="I" value="59"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="message" type="S" value="La response del servizio rispetta lo schema atteso ListResultTemplateASearchDTO"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="46155.4309894676"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+	</Node>
+</Nodes>

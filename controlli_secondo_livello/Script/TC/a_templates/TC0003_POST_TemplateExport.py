@@ -1,0 +1,47 @@
+﻿## Descrizione: Lanciare POST /v1/riskaudit/{abi}/templates/{template}/export con request body SearchParameters
+## Risultato atteso: 200 OK con response body un application/octet-stream
+
+import utils, constants, json, templates, templates_response_schemas
+
+expected_status_code = constants.OK_200
+body_file_path = './TestData/requests/body/TC0003_post_template_export.json'
+
+def TC0003_POST_TemplateExport():
+  
+  ## Importo le project variables, estraggo il body dal file .json e lo converto in obj per verificarne il formato 
+  Log.Message('--- STEP 0: Estraggo il body dal file '+body_file_path+' e importo le project variables ---')
+  
+  if Project.Variables.abi and Project.Variables.template:
+    abi = Project.Variables.abi
+    template = Project.Variables.template
+  else: 
+    Log.Error('abi e template non presenti tra le project variables, verificare!')
+    
+  body_obj = utils.JSON_file_to_obj(body_file_path)
+
+  ## Chiamo il servizio
+  Log.Message('--- STEP 1: Chiamata al servizio')
+  
+  Log.Message('Request body: '+json.dumps(body_obj, default=str, indent=4))
+  
+  resp = templates.POST_template_export(body_obj, abi, template)
+  
+  ## Verifico e leggo lo status code 
+  if resp.StatusCode != expected_status_code:
+    if resp.Text:
+      Log.Warning('Messaggio di errore: '+resp.Text)
+    Log.Error('Response status NON CORRETTO. Lo status PREVISTO era: '+str(expected_status_code))
+  else:
+    Log.Message('Response status CORRETTO.')
+    
+    ## Verifico la response: verifico che il contenuto restituito dal servizio sia type application/octet-stream 
+    Log.Message('--- STEP 1.a: verifico la response ---')
+    
+    if resp.AllHeaders != None:
+      if 'application/octet-stream' not in resp.AllHeaders:
+        Log.Error('Il Content-Type della response non è application/octet-stream come atteso')
+      else:
+        Log.Message('Il servizio ha restituito un application/octet-stream')
+        
+      if resp.Text != '':
+        Log.Message('Il servizio ha restituito la stringa '+resp.Text)

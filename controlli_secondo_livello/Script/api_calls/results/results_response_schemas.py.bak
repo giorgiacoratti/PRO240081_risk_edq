@@ -1,0 +1,57 @@
+﻿import sys
+sys.path.insert(0, "../lib")
+## Importo la posizione della libreria schema perché non la trova più in automatico... capire perché!
+#sys.path.append(r"./Python311/Lib")
+sys.path.append(r"C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\Extensions\Python\Python311\Lib")
+
+from schema import Schema, Or, Optional
+
+
+"""
+  Schema atteso gli interfaccia GET /v1/riskaudit/summaries/results (TC0025)
+  response body: ResultsItemDTO
+"""
+ResultsItemDTO = Schema(
+  [
+    {
+      "id": int,
+      "name": str
+    }
+  ]
+)
+
+
+"""
+  Schema atteso gli interfaccia PUT /v1/riskaudit/summaries/results (TC0026)
+  response body: GenericResponse
+"""
+GenericResponse = Schema(
+  {
+    "id": int
+  }
+)
+
+
+"""
+  Schema atteso gli interfaccia POST /v1/riskaudit/summaries/results/search (TC0027)
+  response body: ListResultResultsSearchDTO
+"""
+ListResultResultsSearchDTO = Schema(
+  {
+    "data": [
+      {
+        "resultId": int,
+        "resultName": str,
+        "regScore": {
+          "minScore": int,
+          "maxScore": int
+        },
+        "virScore": {
+          "minScore": int,
+          "maxScore": int
+        }
+      }
+    ],
+    "total": int
+  }
+)

@@ -1,0 +1,209 @@
+﻿import generic_calls, json
+
+base_url = ProjectSuite.Variables.base_path
+token = ProjectSuite.Variables.token_CC9025
+
+
+
+""" 
+  Metodo che crea una PUT request e la invia all'endpoint al path
+  /v1/riskaudit/summaries/{summaryId}/answers
+  @param: body_obj
+  @param: summary_id
+  @param: query_parameter
+"""
+def PUT_summary_answers(body_obj, summary_id, query_parameters) :
+  path = '/v1/riskaudit/summaries/'+summary_id+'/answers'+query_parameters
+  url = base_url+path
+  body_string = json.dumps(body_obj)
+  return generic_calls.send_request_generic('PUT', url, token, path, body=body_string)
+  
+  
+  
+""" 
+  Metodo che crea una PUT request e la invia all'endpoint al path
+  /v1/riskaudit/summaries/{subSectionId}/questions
+  @param: body_obj
+  @param: subsection_id
+"""
+def PUT_subsection_questions(body_obj, subsection_id) :
+  path = '/v1/riskaudit/summaries/'+subsection_id+'/questions'
+  url = base_url+path
+  body_string = json.dumps(body_obj)
+  return generic_calls.send_request_generic('PUT', url, token, path, body=body_string)
+  
+  
+  
+""" 
+  Metodo che crea una PUT request e la invia all'endpoint al path
+  /v1/riskaudit/summaries/{subSectionId}/answers/{questionId}
+  @param: body_obj
+  @param: subsection_id
+  @param: question_id
+"""
+def PUT_subsection_answers(body_obj, subsection_id, question_id) :
+  path = '/v1/riskaudit/summaries/'+subsection_id+'/answers/'+question_id
+  url = base_url+path
+  body_string = json.dumps(body_obj)
+  return generic_calls.send_request_generic('PUT', url, token, path, body=body_string)
+  
+  
+  
+""" 
+  Metodo che crea una PUT request e la invia all'endpoint al path
+  /v1/riskaudit/summaries/{id}/note
+  @param: body_obj
+  @param: query_parameters
+  @param: summaries_id
+"""
+def PUT_summaries_note(body_obj, query_parameters, summaries_id) :
+  path = '/v1/riskaudit/summaries/'+summaries_id+'/note'+query_parameters
+  url = base_url+path
+  body_string = json.dumps(body_obj)
+  return generic_calls.send_request_generic('PUT', url, token, path, body=body_string)
+  
+  
+  
+""" 
+  Metodo che crea una PUT request e la invia all'endpoint al path
+  /v1/riskaudit/summaries/state
+  @param: body_obj
+  @param: query_parameters
+"""
+def PUT_summaries_state(body_obj, query_parameters) :
+  path = '/v1/riskaudit/summaries/state'+query_parameters
+  url = base_url+path
+  body_string = json.dumps(body_obj)
+  return generic_calls.send_request_generic('PUT', url, token, path, body=body_string)
+  
+  
+  
+""" 
+  Metodo che crea una POST request e la invia all'endpoint al path
+  /v1/riskaudit/summaries/search
+  @param: body_obj
+  @param: query_parameters
+"""
+def POST_summaries_search(body_obj, query_parameters):
+  path = '/v1/riskaudit/summaries/search'+query_parameters
+  url = base_url+path
+  body_string = json.dumps(body_obj)
+  return generic_calls.send_request_generic('POST', url, token, path, body=body_string)
+  
+  
+  
+""" 
+  Metodo che crea una POST request e la invia all'endpoint al path
+  /v1/riskaudit/summaries
+"""
+def POST_summaries():
+  path = '/v1/riskaudit/summaries'
+  url = base_url+path
+  return generic_calls.send_request_generic('POST', url, token, path)
+  
+  
+  
+""" 
+  Metodo che crea una POST request e la invia all'endpoint al path
+  /v1/riskaudit/summaries/publish
+"""
+def POST_summaries_publish():
+  path = '/v1/riskaudit/summaries/publish'
+  url = base_url+path
+  return generic_calls.send_request_generic('POST', url, token, path)
+  
+  
+  
+""" 
+  Metodo che crea una POST request e la invia all'endpoint al path
+  /v1/riskaudit/summaries/export
+  @param: body_obj
+  @param: query_parameters
+"""
+def POST_summaries_export(body_obj, query_parameters):
+  path = '/v1/riskaudit/summaries/export'+query_parameters
+  url = base_url+path
+  body_string = json.dumps(body_obj)
+  return generic_calls.send_request_generic('POST', url, token, path, body=body_string)
+  
+  
+  
+""" 
+  Metodo che crea una GET request e la invia all'endpoint al path
+  /v1/riskaudit/summaries/{id}
+  @param: summaries_id
+"""
+def GET_summaries_id(summaries_id):
+  path = '/v1/riskaudit/summaries/'+summaries_id
+  url = base_url+path
+  return generic_calls.send_request_generic('GET', url, token, path)
+  
+  
+  
+""" 
+  Metodo che crea una GET request e la invia all'endpoint al path
+  /v1/riskaudit/summaries/{id}/print
+  @param: summaries_id
+"""
+def GET_summaries_print(summaries_id):
+  path = '/v1/riskaudit/summaries/'+summaries_id+'/print'
+  url = base_url+path
+  return generic_calls.send_request_generic('GET', url, token, path)
+  
+  
+  
+""" 
+  Metodo che crea una GET request e la invia all'endpoint al path
+  /v1/riskaudit/summaries/subsections
+"""
+def GET_summaries_subsections():
+  path = '/v1/riskaudit/summaries/subsections'
+  url = base_url+path
+  return generic_calls.send_request_generic('GET', url, token, path)
+  
+  
+  
+""" 
+  Metodo che crea una GET request e la invia all'endpoint al path
+  /v1/riskaudit/summaries/stats
+"""
+def GET_summaries_stats():
+  path = '/v1/riskaudit/summaries/stats'
+  url = base_url+path
+  return generic_calls.send_request_generic('GET', url, token, path)
+  
+  
+  
+""" 
+  Metodo che crea una GET request e la invia all'endpoint al path
+  /v1/riskaudit/summaries/stats/{date}
+  @param: stats_date
+"""
+def GET_stats_date(stats_date):
+  path = '/v1/riskaudit/summaries/stats/'+stats_date
+  url = base_url+path
+  return generic_calls.send_request_generic('GET', url, token, path)
+  
+  
+  
+""" 
+  Metodo che crea una GET request e la invia all'endpoint al path
+  /v1/riskaudit/summaries/logs
+"""
+def GET_summaries_logs():
+  path = '/v1/riskaudit/summaries/logs'
+  url = base_url+path
+  return generic_calls.send_request_generic('GET', url, token, path)
+  
+  
+  
+""" 
+  Metodo che crea una GET request e la invia all'endpoint al path
+  /v1/riskaudit/summaries/answers/{subsectionId}
+  @param: query_parameters
+  @param: subsection_id
+"""
+def GET_summaries_answers(subsection_id) :
+  path = '/v1/riskaudit/summaries/answers/'+subsection_id
+  url = base_url+path
+  return generic_calls.send_request_generic('GET', url, token, path)

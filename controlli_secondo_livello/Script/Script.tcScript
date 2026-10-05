@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<folder name="api_calls">
+			<folder name="templates">
+				<child name="templates" key="{5968DAFC-F1E3-44D8-99D7-341A92C61815}" path="api_calls\templates\templates.py" />
+				<child name="templates_response_schemas" key="{A72C56BF-0D45-4F54-AD0D-7BDA82AE2DAE}" path="api_calls\templates\templates_response_schemas.py" />
+			</folder>
+			<folder name="summaries">
+				<child name="summaries" key="{CBFF286A-D486-4EFA-A75F-12250724490D}" path="api_calls\summaries\summaries.py" />
+				<child name="summaries_response_schemas" key="{C0412DE2-C963-45BC-B2CF-43FCBD93E3B2}" path="api_calls\summaries\summaries_response_schemas.py" />
+			</folder>
+			<folder name="results">
+				<child name="results" key="{6971EA58-34C7-45D9-A049-C849DC0ADB3D}" path="api_calls\results\results.py" />
+				<child name="results_response_schemas" key="{FB8B86F1-4D72-455F-B459-D0E59DA22F00}" path="api_calls\results\results_response_schemas.py" />
+			</folder>
+			<folder name="waiver">
+				<child name="waiver" key="{2E2F73C8-F368-4DE6-BE1E-D881C8C16C0B}" path="api_calls\waiver\waiver.py" />
+				<child name="waiver_response_schemas" key="{421CAC37-C79B-45E5-8E0D-F287BD6020FD}" path="api_calls\waiver\waiver_response_schemas.py" />
+			</folder>
+			<folder name="legal_entities">
+				<child name="legal_entities" key="{016BC179-A8D4-4889-BFE1-D81EE4BBA994}" path="api_calls\legal_entities\legal_entities.py" />
+				<child name="legal_entities_response_schemas" key="{C7A664B9-235C-407C-AD77-FD69A4DA8A3F}" path="api_calls\legal_entities\legal_entities_response_schemas.py" />
+			</folder>
+			<child name="generic_calls" key="{4BCB0703-C08A-4F1B-BB67-E3051409EA3B}" path="api_calls\generic_calls.py" />
+		</folder>
+		<folder name="TC">
+			<folder name="a_templates">
+				<child name="TC0001_GET_TemplateNote" key="{5B89DABF-E5F2-4B2A-8D87-4ACE283DF871}" path="TC\a_templates\TC0001_GET_TemplateNote.py" />
+				<child name="TC0002_PUT_TemplateNote" key="{A761546D-6E08-4A93-BA81-5CAE6330BBB7}" path="TC\a_templates\TC0002_PUT_TemplateNote.py" />
+				<child name="TC0003_POST_TemplateExport" key="{3F55941D-F32B-46B2-BC12-D5F540578F8F}" path="TC\a_templates\TC0003_POST_TemplateExport.py" />
+				<child name="TC0004_POST_TradedInstrumentsSearch" key="{D57CEE9F-DEB1-4450-A409-45B644758C19}" path="TC\a_templates\TC0004_POST_TradedInstrumentsSearch.py" />
+				<child name="TC0005_POST_HeldInstrumentsSearch" key="{773E7553-A2FE-4E08-A7B6-E2D1F0B89E9B}" path="TC\a_templates\TC0005_POST_HeldInstrumentsSearch.py" />
+				<child name="TC0006_POST_TemplateBSearch" key="{8F6684F6-222B-4025-9BAB-287A219DB8FB}" path="TC\a_templates\TC0006_POST_TemplateBSearch.py" />
+				<child name="TC0007_POST_TemplateASearch" key="{DC83DFD2-5D7F-4BE7-8EF8-EB418328A585}" path="TC\a_templates\TC0007_POST_TemplateASearch.py" />
+				<child name="TC0008_GET_TemplateBWaivers" key="{78731D8A-D7DE-403E-B9E3-F75D75343146}" path="TC\a_templates\TC0008_GET_TemplateBWaivers.py" />
+			</folder>
+			<folder name="b_summaries">
+				<child name="TC0009_PUT_SummaryAnswers" key="{EA417CDE-AFB8-4FA5-9F50-6B0BEDFB305A}" path="TC\b_summaries\TC0009_PUT_SummaryAnswers.py" />
+				<child name="TC0010_PUT_SubSectionQuestions" key="{0653BC37-894B-4D1E-939B-46F071FAFEAE}" path="TC\b_summaries\TC0010_PUT_SubSectionQuestions.py" />
+				<child name="TC0011_PUT_SubSectionAnswers" key="{5C0F6B7E-E763-41A1-971B-A956E0C0493B}" path="TC\b_summaries\TC0011_PUT_SubSectionAnswers.py" />
+				<child name="TC0012_PUT_SummariesNote" key="{A9A614AB-582C-4B67-B751-43A3FC635CD2}" path="TC\b_summaries\TC0012_PUT_SummariesNote.py" />
+				<child name="TC0013_PUT_SummariesState" key="{9DA65E6C-F0F4-4B9E-B739-BAAB386DE5AA}" path="TC\b_summaries\TC0013_PUT_SummariesState.py" />
+				<child name="TC0014_POST_Summaries" key="{4741522B-B17B-43C8-9323-349F53F7E8FF}" path="TC\b_summaries\TC0014_POST_Summaries.py" />
+				<child name="TC0015_POST_SummariesSearch" key="{70A74002-4996-4BDC-91C1-35302C398680}" path="TC\b_summaries\TC0015_POST_SummariesSearch.py" />
+				<child name="TC0016_POST_SummariesPublish" key="{F5F8AC84-0581-4C9D-8328-D594F3C7EDCA}" path="TC\b_summaries\TC0016_POST_SummariesPublish.py" />
+				<child name="TC0017_POST_SummariesExport" key="{B8874D5C-B4B4-4D14-AFAA-57ADC50BBF0E}" path="TC\b_summaries\TC0017_POST_SummariesExport.py" />
+				<child name="TC0018_GET_SummariesId" key="{84C15E27-CD9D-498E-A2BC-0BEC39AEBA49}" path="TC\b_summaries\TC0018_GET_SummariesId.py" />
+				<child name="TC0019_GET_SummariesPrint" key="{C64187D5-51F2-44AF-85D6-B2360856E182}" path="TC\b_summaries\TC0019_GET_SummariesPrint.py" />
+				<child name="TC0020_GET_SummariesSubSection" key="{021D6473-48B4-4FA4-BACE-D2B84ACCE3E3}" path="TC\b_summaries\TC0020_GET_SummariesSubSection.py" />
+				<child name="TC0021_GET_SummariesStats" key="{D9E28780-3B05-47D0-8541-CDD2DC86E1CB}" path="TC\b_summaries\TC0021_GET_SummariesStats.py" />
+				<child name="TC0022_GET_SummariesStatsDate" key="{7C452BC5-BA50-4508-B47A-55B547291AAC}" path="TC\b_summaries\TC0022_GET_SummariesStatsDate.py" />
+				<child name="TC0023_GET_SummariesLogs" key="{CD0D3642-37DF-4F11-A80C-125E4B9CD8D1}" path="TC\b_summaries\TC0023_GET_SummariesLogs.py" />
+				<child name="TC0024_GET_SummariesAnswers" key="{8838A8E3-CD24-4825-BBE4-C93344CA6D1F}" path="TC\b_summaries\TC0024_GET_SummariesAnswers.py" />
+			</folder>
+			<folder name="c_results">
+				<child name="TC0025_GET_Results" key="{5FAF74D7-9D9A-4598-96A3-980F5259683A}" path="TC\c_results\TC0025_GET_Results.py" />
+				<child name="TC0026_PUT_Results" key="{BFB1C1AA-C6C1-4D43-A396-CC8A98E44D79}" path="TC\c_results\TC0026_PUT_Results.py" />
+				<child name="TC0027_POST_ResultsSearch" key="{026E1ED4-0CB0-47A2-9AF6-CA29D415B21B}" path="TC\c_results\TC0027_POST_ResultsSearch.py" />
+			</folder>
+			<folder name="d_waiver">
+				<child name="TC0028_POST_WaiverSearch" key="{DF56517F-35E7-4707-9453-29B10405AB50}" path="TC\d_waiver\TC0028_POST_WaiverSearch.py" />
+				<child name="TC0029_POST_TargetSearch" key="{7A6F72ED-6C7F-42AF-A311-C9CA008F1E05}" path="TC\d_waiver\TC0029_POST_TargetSearch.py" />
+				<child name="TC0030_POST_CwmtoSearch" key="{4813E0F7-6224-42A3-A283-BE7D6840460D}" path="TC\d_waiver\TC0030_POST_CwmtoSearch.py" />
+				<child name="TC0031_GET_CwmtoAssessments" key="{E7D39D63-1EB1-4436-806F-0BEBE48698A0}" path="TC\d_waiver\TC0031_GET_CwmtoAssessments.py" />
+			</folder>
+			<folder name="e_legal_entities">
+				<child name="TC0032_POST_LegalEntitiesSearch" key="{22A55D8F-C8D5-4BA5-A924-5545ADC2203F}" path="TC\e_legal_entities\TC0032_POST_LegalEntitiesSearch.py" />
+			</folder>
+		</folder>
+		<folder name="utils">
+			<child name="constants" key="{FBE939BA-B76F-4E65-AA27-C549DAADA1C9}" path="utils\constants.py" />
+			<child name="set_environment" key="{B5C01885-5984-4D7F-9F6D-96C390A66439}" path="utils\set_environment.py" />
+			<child name="utils" key="{EA4A78EC-2FF6-4DBD-B131-E18E80F29714}" path="utils\utils.py" />
+		</folder>
+	</children>
+</Root>

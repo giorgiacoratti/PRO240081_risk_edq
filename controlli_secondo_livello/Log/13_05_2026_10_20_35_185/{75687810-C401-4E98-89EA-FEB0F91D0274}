@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row2">
+				<Prp name="name" type="S" value="TC0003_POST_TemplateExport [Script\TC0003_POST_TemplateExport - TC0003_POST_TemplateExport]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="46155.4309787384"/>
+				<Prp name="start time" type="D" value="46155.4309764815"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="details" type="S" value="{7415BF58-BAFD-47DA-9E03-4FB5E08F9A9B}"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="row6">
+				<Prp name="name" type="S" value="TC0007_POST_TemplateASearch [Script\TC0007_POST_TemplateASearch - TC0007_POST_TemplateASearch]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="46155.4309895833"/>
+				<Prp name="start time" type="D" value="46155.4309873495"/>
+				<Prp name="index" type="I" value="6"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="details" type="S" value="{67D5A430-1F10-45BC-B0E0-23C9FA6DB3CD}"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="row0">
+				<Prp name="name" type="S" value="TC0001_GET_TemplateNote [Script\TC0001_GET_TemplateNote - TC0001_GET_TemplateNote]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="46155.4309694444"/>
+				<Prp name="start time" type="D" value="46155.4309630208"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="details" type="S" value="{C78BC518-00DA-423F-9EEF-E1BF67CBA35D}"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="row5">
+				<Prp name="name" type="S" value="TC0006_POST_TemplateBSearch [Script\TC0006_POST_TemplateBSearch - TC0006_POST_TemplateBSearch]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="46155.4309872917"/>
+				<Prp name="start time" type="D" value="46155.4309846759"/>
+				<Prp name="index" type="I" value="5"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="details" type="S" value="{A3654FED-149A-466E-ADC5-618091DD9F8A}"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="row1">
+				<Prp name="name" type="S" value="TC0002_PUT_TemplateNote [Script\TC0002_PUT_TemplateNote - TC0002_PUT_TemplateNote]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="46155.4309763657"/>
+				<Prp name="start time" type="D" value="46155.4309695023"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="details" type="S" value="{35B87D74-6C9D-46AD-A6CA-4FB41527EA2A}"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="row7">
+				<Prp name="name" type="S" value="TC0008_GET_TemplateBWaivers [Script\TC0008_GET_TemplateBWaivers - TC0008_GET_TemplateBWaivers]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="46155.4309920602"/>
+				<Prp name="start time" type="D" value="46155.4309895833"/>
+				<Prp name="index" type="I" value="7"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="details" type="S" value="{38035C26-8037-40B1-88F5-4C142D58CCD9}"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="row3">
+				<Prp name="name" type="S" value="TC0004_POST_TradedInstrumentsSearch [Script\TC0004_POST_TradedInstrumentsSearch - TC0004_POST_TradedInstrumentsSearch]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="46155.4309823958"/>
+				<Prp name="start time" type="D" value="46155.4309788542"/>
+				<Prp name="index" type="I" value="3"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="details" type="S" value="{EA557BEA-AEB2-4494-841D-43C51CD32766}"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="row4">
+				<Prp name="name" type="S" value="TC0005_POST_HeldInstrumentsSearch [Script\TC0005_POST_HeldInstrumentsSearch - TC0005_POST_HeldInstrumentsSearch]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="46155.4309846181"/>
+				<Prp name="start time" type="D" value="46155.4309824653"/>
+				<Prp name="index" type="I" value="4"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="details" type="S" value="{A7A84CEB-6866-4317-BD77-7ACEA138E76A}"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

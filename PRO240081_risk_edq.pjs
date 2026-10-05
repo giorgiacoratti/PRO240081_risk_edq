@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="15.0" key="{208EC553-B021-4DC2-9430-FAAC44AA247B}">
+	<children>
+		<child name="controlli_secondo_livello" key="{CF853BEE-6998-42DD-A303-60E74B0F97E2}" path="controlli_secondo_livello\controlli_secondo_livello.mds" />
+	</children>
+	<testItems key="{07EB1665-6B24-48CE-9E7B-3CE2565D376E}">
+		<children>
+			<testItem key="{CF853BEE-6998-42DD-A303-60E74B0F97E2}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{B72FBBAE-43D9-4306-A485-5DDFA174C701}">
+		<data Version="4">
+			<Items>
+				<Variable Name="token_CC9025" Type="String" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="base_path" Type="String" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="base_url_prova_fede" Type="String" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="token_prova_fede" Type="String" Local="True">
+					<DefValue />
+				</Variable>
+			</Items>
+		</data>
+	</variables>
+	<analysis key="{088AFB09-DF02-4D28-9F48-CC692A474952}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+</Root>

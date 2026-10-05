@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="stack"/>
+		<Node name="child data"/>
+		<Node name="message 7">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="34"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="date" type="D" value="46148.4438046412"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="message" type="S" value="--- STEP 2: Validazione della response"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="30"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="date" type="D" value="46148.4438045023"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="Response status text: OK&#xA;&#xA;Response body:&#xA;{&quot;data&quot;:[{&quot;date&quot;:&quot;2019-11-04&quot;,&quot;legalEntity&quot;:{&quot;abi&quot;:&quot;07078&quot;,&quot;name&quot;:&quot;BCC DEI CASTELLI E DEGLI IBLEI&quot;},&quot;threshold&quot;:&quot;Ctv Titoli Strutturati&quot;,&quot;waiver&quot;:&quot;FTA&quot;,&quot;emailSentDate&quot;:null,&quot;note&quot;:null,&quot;creationDate&quot;:&quot;2019-11-04&quot;},{&quot;date&quot;:&quot;2019-11-04&quot;,&quot;legalEntity&quot;:{&quot;abi&quot;:&quot;08374&quot;,&quot;name&quot;:&quot;BCC BARLASSINA&quot;},&quot;threshold&quot;:&quot;Ctv Corp. da Baa1 a Baa3 (Max Emitt.)&quot;,&quot;waiver&quot;:&quot;FTA&quot;,&quot;emailSentDate&quot;:null,&quot;note&quot;:null,&quot;creationDate&quot;:&quot;2019-11-04&quot;},{&quot;date&quot;:&quot;2023-09-29&quot;,&quot;legalEntity&quot;:{&quot;abi&quot;:&quot;08954&quot;,&quot;name&quot;:&quot;BCC LA RISCOSSA DI REGALBUTO&quot;},&quot;threshold&quot;:&quot;Ctv Titoli Azionari e Certificates&quot;,&quot;waiver&quot;:&quot;Deroga&quot;,&quot;emailSentDate&quot;:&quot;2023-10-03&quot;,&quot;note&quot;:&quot;Superamento per riduzione denominatore, rientrato gg successivo&quot;,&quot;creationDate&quot;:&quot;2023-09-29&quot;},{&quot;date&quot;:&quot;2024-02-23&quot;,&quot;legalEntity&quot;:{&quot;abi&quot;:&quot;08954&quot;,&quot;name&quot;:&quot;BCC LA RISCOSSA DI REGALBUTO&quot;},&quot;threshold&quot;:&quot;Ctv Titoli Azionari e Certificates&quot;,&quot;waiver&quot;:&quot;Deroga&quot;,&quot;emailSentDate&quot;:&quot;2024-02-28&quot;,&quot;note&quot;:&quot;Superamento per effetto mercato&quot;,&quot;creationDate&quot;:&quot;2024-02-23&quot;},{&quot;date&quot;:&quot;2024-03-01&quot;,&quot;legalEntity&quot;:{&quot;abi&quot;:&quot;08954&quot;,&quot;name&quot;:&quot;BCC LA RISCOSSA DI REGALBUTO&quot;},&quot;threshold&quot;:&quot;Ctv Titoli Azionari e Certificates&quot;,&quot;waiver&quot;:&quot;Deroga&quot;,&quot;emailSentDate&quot;:&quot;2024-02-28&quot;,&quot;note&quot;:&quot;Superamento per effetto mercato&quot;,&quot;creationDate&quot;:&quot;2024-03-01&quot;},{&quot;date&quot;:&quot;2025-03-06&quot;,&quot;legalEntity&quot;:{&quot;abi&quot;:&quot;08954&quot;,&quot;name&quot;:&quot;BCC LA RISCOSSA DI REGALBUTO&quot;},&quot;threshold&quot;:&quot;Ctv Titoli Azionari e Certificates&quot;,&quot;waiver&quot;:&quot;Deroga&quot;,&quot;emailSentDate&quot;:&quot;2025-03-10&quot;,&quot;note&quot;:&quot;Sforamento per mov prezzi&quot;,&quot;creationDate&quot;:&quot;2025-03-06&quot;},{&quot;date&quot;:&quot;2025-03-12&quot;,&quot;legalEntity&quot;:{&quot;abi&quot;:&quot;08954&quot;,&quot;name&quot;:&quot;BCC LA RISCOSSA DI REGALBUTO&quot;},&quot;threshold&quot;:&quot;Ctv Titoli Azionari e Certificates&quot;,&quot;waiver&quot;:&quot;Deroga&quot;,&quot;emailSentDate&quot;:&quot;2025-03-10&quot;,&quot;note&quot;:&quot;Sforamento per mov prezzi&quot;,&quot;creationDate&quot;:&quot;2025-03-12&quot;},{&quot;date&quot;:&quot;2025-04-15&quot;,&quot;legalEntity&quot;:{&quot;abi&quot;:&quot;08954&quot;,&quot;name&quot;:&quot;BCC LA RISCOSSA DI REGALBUTO&quot;},&quot;threshold&quot;:&quot;Ctv Titoli Azionari e Certificates&quot;,&quot;waiver&quot;:&quot;Deroga&quot;,&quot;emailSentDate&quot;:&quot;2025-03-10&quot;,&quot;note&quot;:&quot;Sforamento per Rimborso CCT aprile 2025 4 mln&quot;,&quot;creationDate&quot;:&quot;2025-04-15&quot;},{&quot;date&quot;:&quot;2025-12-15&quot;,&quot;legalEntity&quot;:{&quot;abi&quot;:&quot;08374&quot;,&quot;name&quot;:&quot;BCC BARLASSINA&quot;},&quot;threshold&quot;:&quot;Ctv Corp. da Baa1 a Baa3 (Max Emitt.)&quot;,&quot;waiver&quot;:&quot;FTA&quot;,&quot;emailSentDate&quot;:null,&quot;note&quot;:&quot;Sforamento tecnico legato a posizioni storiche che sono tornate ad essere valorizzate correttamente dopo pricing anomalo sul 12/12&quot;,&quot;creationDate&quot;:&quot;2025-12-15&quot;},{&quot;date&quot;:&quot;2025-12-29&quot;,&quot;legalEntity&quot;:{&quot;abi&quot;:&quot;08374&quot;,&quot;name&quot;:&quot;BCC BARLASSINA&quot;},&quot;threshold&quot;:&quot;Ctv Corp. &gt;= A3 (Max Emitt.)&quot;,&quot;waiver&quot;:&quot;Deroga&quot;,&quot;emailSentDate&quot;:&quot;2025-12-30&quot;,&quot;note&quot;:&quot;Sforamento per upgrade Rating Intesa SanPaolo&quot;,&quot;creationDate&quot;:&quot;2025-12-29&quot;},{&quot;date&quot;:&quot;2026-02-05&quot;,&quot;legalEntity&quot;:{&quot;abi&quot;:&quot;08472&quot;,&quot;name&quot;:&quot;BCC FELSINEA&quot;},&quot;threshold&quot;:&quot;Ctv Corp. Non IG (Max Emitt.)&quot;,&quot;waiver&quot;:&quot; &quot;,&quot;emailSentDate&quot;:&quot;2026-02-06&quot;,&quot;note&quot;:&quot;Sforamento per acquisto BancaSella. Errore operativo ed effettuata vendita a seguire per rientrare&quot;,&quot;creationDate&quot;:&quot;2026-02-05&quot;},{&quot;date&quot;:&quot;2026-02-23&quot;,&quot;legalEntity&quot;:{&quot;abi&quot;:&quot;08954&quot;,&quot;name&quot;:&quot;BCC LA RISCOSSA DI REGALBUTO&quot;},&quot;threshold&quot;:&quot;Ctv Corp. Non rated&quot;,&quot;waiver&quot;:&quot; &quot;,&quot;emailSentDate&quot;:&quot;2026-02-24&quot;,&quot;note&quot;:&quot;Sforamento per sottoscrizione di Emissione sul Primario. Richiesta deroga vista la prossima scadenza di un bond non rated. Dato riscontro positivo&quot;,&quot;creationDate&quot;:&quot;2026-02-23&quot;},{&quot;date&quot;:&quot;2026-03-10&quot;,&quot;legalEntity&quot;:{&quot;abi&quot;:&quot;08954&quot;,&quot;name&quot;:&quot;BCC LA RISCOSSA DI REGALBUTO&quot;},&quot;threshold&quot;:&quot;Ctv Titoli Azionari e Certificates&quot;,&quot;waiver&quot;:&quot;Deroga &quot;,&quot;emailSentDate&quot;:null,&quot;note&quot;:&quot;Sforamento complice la volatilitÃ  delle quotazioni azioniarie&quot;,&quot;creationDate&quot;:&quot;2026-03-10&quot;},{&quot;date&quot;:&quot;2026-03-17&quot;,&quot;legalEntity&quot;:{&quot;abi&quot;:&quot;08954&quot;,&quot;name&quot;:&quot;BCC LA RISCOSSA DI REGALBUTO&quot;},&quot;threshold&quot;:&quot;Ctv Titoli Azionari e Certificates&quot;,&quot;waiver&quot;:&quot;Deroga &quot;,&quot;emailSentDate&quot;:null,&quot;note&quot;:&quot;Sforamento complice la volatilitÃ  delle quotazioni azioniarie&quot;,&quot;creationDate&quot;:&quot;2026-03-17&quot;}],&quot;total&quot;:14}&#xA;&#xA;All response headers:&#xA;Date: Wed, 06 May 2026 08:36:03 GMT&#xA;Transfer-Encoding: chunked&#xA;Content-Type: application/json&#xA;Server: istio-envoy&#xA;x-envoy-upstream-service-time: 60&#xA;&#xA;"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="message" type="S" value="The 'POST' request to 'https://pwm-api.integrazione.servizi.allitude.it/v1/riskaudit/waiver/waiver/search' was sent with the status code 200."/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="18"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="date" type="D" value="46148.4438009838"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="message" type="S" value="--- STEP 1: Chiamata al servizio"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="20"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="date" type="D" value="46148.4438009954"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="message" type="S" value="Request body: {&#xA;    &quot;skip&quot;: 0,&#xA;    &quot;sort&quot;: [],&#xA;    &quot;take&quot;: 110,&#xA;    &quot;filter&quot;: {&#xA;        &quot;logic&quot;: &quot;and&quot;,&#xA;        &quot;filters&quot;: []&#xA;    }&#xA;}"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="13"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="date" type="D" value="46148.443800544"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="message" type="S" value="--- STEP 0: Estraggo il body dal file ./TestData/requests/body/TC0028_post_waiver_search.json ---"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 8">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="50"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="date" type="D" value="46148.4438050579"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="message" type="S" value="La response del servizio rispetta lo schema atteso ListResultWaiverSearchDTO"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="35"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="date" type="D" value="46148.4438045833"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="message" type="S" value="Il servizio /v1/riskaudit/waiver/waiver/search ha risposto con status: 200 OK"/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="30"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="date" type="D" value="46148.443801412"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="message" type="S" value="Sending the 'POST' request to 'https://pwm-api.integrazione.servizi.allitude.it/v1/riskaudit/waiver/waiver/search'."/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="30"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="date" type="D" value="46148.4438046296"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="message" type="S" value="Response status CORRETTO."/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 9">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="51"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="date" type="D" value="46148.4438051389"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="message" type="S" value="Item restituito: {&#xA;    &quot;data&quot;: [&#xA;        {&#xA;            &quot;date&quot;: &quot;2019-11-04&quot;,&#xA;            &quot;legalEntity&quot;: {&#xA;                &quot;abi&quot;: &quot;07078&quot;,&#xA;                &quot;name&quot;: &quot;BCC DEI CASTELLI E DEGLI IBLEI&quot;&#xA;            },&#xA;            &quot;threshold&quot;: &quot;Ctv Titoli Strutturati&quot;,&#xA;            &quot;waiver&quot;: &quot;FTA&quot;,&#xA;            &quot;emailSentDate&quot;: null,&#xA;            &quot;note&quot;: null,&#xA;            &quot;creationDate&quot;: &quot;2019-11-04&quot;&#xA;        },&#xA;        {&#xA;            &quot;date&quot;: &quot;2019-11-04&quot;,&#xA;            &quot;legalEntity&quot;: {&#xA;                &quot;abi&quot;: &quot;08374&quot;,&#xA;                &quot;name&quot;: &quot;BCC BARLASSINA&quot;&#xA;            },&#xA;            &quot;threshold&quot;: &quot;Ctv Corp. da Baa1 a Baa3 (Max Emitt.)&quot;,&#xA;            &quot;waiver&quot;: &quot;FTA&quot;,&#xA;            &quot;emailSentDate&quot;: null,&#xA;            &quot;note&quot;: null,&#xA;            &quot;creationDate&quot;: &quot;2019-11-04&quot;&#xA;        },&#xA;        {&#xA;            &quot;date&quot;: &quot;2023-09-29&quot;,&#xA;            &quot;legalEntity&quot;: {&#xA;                &quot;abi&quot;: &quot;08954&quot;,&#xA;                &quot;name&quot;: &quot;BCC LA RISCOSSA DI REGALBUTO&quot;&#xA;            },&#xA;            &quot;threshold&quot;: &quot;Ctv Titoli Azionari e Certificates&quot;,&#xA;            &quot;waiver&quot;: &quot;Deroga&quot;,&#xA;            &quot;emailSentDate&quot;: &quot;2023-10-03&quot;,&#xA;            &quot;note&quot;: &quot;Superamento per riduzione denominatore, rientrato gg successivo&quot;,&#xA;            &quot;creationDate&quot;: &quot;2023-09-29&quot;&#xA;        },&#xA;        {&#xA;            &quot;date&quot;: &quot;2024-02-23&quot;,&#xA;            &quot;legalEntity&quot;: {&#xA;                &quot;abi&quot;: &quot;08954&quot;,&#xA;                &quot;name&quot;: &quot;BCC LA RISCOSSA DI REGALBUTO&quot;&#xA;            },&#xA;            &quot;threshold&quot;: &quot;Ctv Titoli Azionari e Certificates&quot;,&#xA;            &quot;waiver&quot;: &quot;Deroga&quot;,&#xA;            &quot;emailSentDate&quot;: &quot;2024-02-28&quot;,&#xA;            &quot;note&quot;: &quot;Superamento per effetto mercato&quot;,&#xA;            &quot;creationDate&quot;: &quot;2024-02-23&quot;&#xA;        },&#xA;        {&#xA;            &quot;date&quot;: &quot;2024-03-01&quot;,&#xA;            &quot;legalEntity&quot;: {&#xA;                &quot;abi&quot;: &quot;08954&quot;,&#xA;                &quot;name&quot;: &quot;BCC LA RISCOSSA DI REGALBUTO&quot;&#xA;            },&#xA;            &quot;threshold&quot;: &quot;Ctv Titoli Azionari e Certificates&quot;,&#xA;            &quot;waiver&quot;: &quot;Deroga&quot;,&#xA;            &quot;emailSentDate&quot;: &quot;2024-02-28&quot;,&#xA;            &quot;note&quot;: &quot;Superamento per effetto mercato&quot;,&#xA;            &quot;creationDate&quot;: &quot;2024-03-01&quot;&#xA;        },&#xA;        {&#xA;            &quot;date&quot;: &quot;2025-03-06&quot;,&#xA;            &quot;legalEntity&quot;: {&#xA;                &quot;abi&quot;: &quot;08954&quot;,&#xA;                &quot;name&quot;: &quot;BCC LA RISCOSSA DI REGALBUTO&quot;&#xA;            },&#xA;            &quot;threshold&quot;: &quot;Ctv Titoli Azionari e Certificates&quot;,&#xA;            &quot;waiver&quot;: &quot;Deroga&quot;,&#xA;            &quot;emailSentDate&quot;: &quot;2025-03-10&quot;,&#xA;            &quot;note&quot;: &quot;Sforamento per mov prezzi&quot;,&#xA;            &quot;creationDate&quot;: &quot;2025-03-06&quot;&#xA;        },&#xA;        {&#xA;            &quot;date&quot;: &quot;2025-03-12&quot;,&#xA;            &quot;legalEntity&quot;: {&#xA;                &quot;abi&quot;: &quot;08954&quot;,&#xA;                &quot;name&quot;: &quot;BCC LA RISCOSSA DI REGALBUTO&quot;&#xA;            },&#xA;            &quot;threshold&quot;: &quot;Ctv Titoli Azionari e Certificates&quot;,&#xA;            &quot;waiver&quot;: &quot;Deroga&quot;,&#xA;            &quot;emailSentDate&quot;: &quot;2025-03-10&quot;,&#xA;            &quot;note&quot;: &quot;Sforamento per mov prezzi&quot;,&#xA;            &quot;creationDate&quot;: &quot;2025-03-12&quot;&#xA;        },&#xA;        {&#xA;            &quot;date&quot;: &quot;2025-04-15&quot;,&#xA;            &quot;legalEntity&quot;: {&#xA;                &quot;abi&quot;: &quot;08954&quot;,&#xA;                &quot;name&quot;: &quot;BCC LA RISCOSSA DI REGALBUTO&quot;&#xA;            },&#xA;            &quot;threshold&quot;: &quot;Ctv Titoli Azionari e Certificates&quot;,&#xA;            &quot;waiver&quot;: &quot;Deroga&quot;,&#xA;            &quot;emailSentDate&quot;: &quot;2025-03-10&quot;,&#xA;            &quot;note&quot;: &quot;Sforamento per Rimborso CCT aprile 2025 4 mln&quot;,&#xA;            &quot;creationDate&quot;: &quot;2025-04-15&quot;&#xA;        },&#xA;        {&#xA;            &quot;date&quot;: &quot;2025-12-15&quot;,&#xA;            &quot;legalEntity&quot;: {&#xA;                &quot;abi&quot;: &quot;08374&quot;,&#xA;                &quot;name&quot;: &quot;BCC BARLASSINA&quot;&#xA;            },&#xA;            &quot;threshold&quot;: &quot;Ctv Corp. da Baa1 a Baa3 (Max Emitt.)&quot;,&#xA;            &quot;waiver&quot;: &quot;FTA&quot;,&#xA;            &quot;emailSentDate&quot;: null,&#xA;            &quot;note&quot;: &quot;Sforamento tecnico legato a posizioni storiche che sono tornate ad essere valorizzate correttamente dopo pricing anomalo sul 12/12&quot;,&#xA;            &quot;creationDate&quot;: &quot;2025-12-15&quot;&#xA;        },&#xA;        {&#xA;            &quot;date&quot;: &quot;2025-12-29&quot;,&#xA;            &quot;legalEntity&quot;: {&#xA;                &quot;abi&quot;: &quot;08374&quot;,&#xA;                &quot;name&quot;: &quot;BCC BARLASSINA&quot;&#xA;            },&#xA;            &quot;threshold&quot;: &quot;Ctv Corp. &gt;= A3 (Max Emitt.)&quot;,&#xA;            &quot;waiver&quot;: &quot;Deroga&quot;,&#xA;            &quot;emailSentDate&quot;: &quot;2025-12-30&quot;,&#xA;            &quot;note&quot;: &quot;Sforamento per upgrade Rating Intesa SanPaolo&quot;,&#xA;            &quot;creationDate&quot;: &quot;2025-12-29&quot;&#xA;        },&#xA;        {&#xA;            &quot;date&quot;: &quot;2026-02-05&quot;,&#xA;            &quot;legalEntity&quot;: {&#xA;                &quot;abi&quot;: &quot;08472&quot;,&#xA;                &quot;name&quot;: &quot;BCC FELSINEA&quot;&#xA;            },&#xA;            &quot;threshold&quot;: &quot;Ctv Corp. Non IG (Max Emitt.)&quot;,&#xA;            &quot;waiver&quot;: &quot; &quot;,&#xA;            &quot;emailSentDate&quot;: &quot;2026-02-06&quot;,&#xA;            &quot;note&quot;: &quot;Sforamento per acquisto BancaSella. Errore operativo ed effettuata vendita a seguire per rientrare&quot;,&#xA;            &quot;creationDate&quot;: &quot;2026-02-05&quot;&#xA;        },&#xA;        {&#xA;            &quot;date&quot;: &quot;2026-02-23&quot;,&#xA;            &quot;legalEntity&quot;: {&#xA;                &quot;abi&quot;: &quot;08954&quot;,&#xA;                &quot;name&quot;: &quot;BCC LA RISCOSSA DI REGALBUTO&quot;&#xA;            },&#xA;            &quot;threshold&quot;: &quot;Ctv Corp. Non rated&quot;,&#xA;            &quot;waiver&quot;: &quot; &quot;,&#xA;            &quot;emailSentDate&quot;: &quot;2026-02-24&quot;,&#xA;            &quot;note&quot;: &quot;Sforamento per sottoscrizione di Emissione sul Primario. Richiesta deroga vista la prossima scadenza di un bond non rated. Dato riscontro positivo&quot;,&#xA;            &quot;creationDate&quot;: &quot;2026-02-23&quot;&#xA;        },&#xA;        {&#xA;            &quot;date&quot;: &quot;2026-03-10&quot;,&#xA;            &quot;legalEntity&quot;: {&#xA;                &quot;abi&quot;: &quot;08954&quot;,&#xA;                &quot;name&quot;: &quot;BCC LA RISCOSSA DI REGALBUTO&quot;&#xA;            },&#xA;            &quot;threshold&quot;: &quot;Ctv Titoli Azionari e Certificates&quot;,&#xA;            &quot;waiver&quot;: &quot;Deroga &quot;,&#xA;            &quot;emailSentDate&quot;: null,&#xA;            &quot;note&quot;: &quot;Sforamento complice la volatilit\u00c3\u00a0 delle quotazioni azioniarie&quot;,&#xA;            &quot;creationDate&quot;: &quot;2026-03-10&quot;&#xA;        },&#xA;        {&#xA;            &quot;date&quot;: &quot;2026-03-17&quot;,&#xA;            &quot;legalEntity&quot;: {&#xA;                &quot;abi&quot;: &quot;08954&quot;,&#xA;                &quot;name&quot;: &quot;BCC LA RISCOSSA DI REGALBUTO&quot;&#xA;            },&#xA;            &quot;threshold&quot;: &quot;Ctv Titoli Azionari e Certificates&quot;,&#xA;            &quot;waiver&quot;: &quot;Deroga &quot;,&#xA;            &quot;emailSentDate&quot;: null,&#xA;            &quot;note&quot;: &quot;Sforamento complice la volatilit\u00c3\u00a0 delle quotazioni azioniarie&quot;,&#xA;            &quot;creationDate&quot;: &quot;2026-03-17&quot;&#xA;        }&#xA;    ],&#xA;    &quot;total&quot;: 14&#xA;}"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{DF56517F-35E7-4707-9453-29B10405AB50}"/>
+			<Prp name="unit 1" type="S" value="{4BCB0703-C08A-4F1B-BB67-E3051409EA3B}"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+	</Node>
+</Nodes>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{C64187D5-51F2-44AF-85D6-B2360856E182}"/>
+			<Prp name="unit 1" type="S" value="{4BCB0703-C08A-4F1B-BB67-E3051409EA3B}"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="message" type="S" value="Sending the 'GET' request to 'https://pwm-api.integrazione.servizi.allitude.it/v1/riskaudit/summaries/202206_03599/print'."/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="date" type="D" value="46157.5459354977"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="12"/>
+			<Prp name="message" type="S" value="--- STEP 0: Importo le project variables ---"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="date" type="D" value="46157.5459352662"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 7">
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="41"/>
+			<Prp name="message" type="S" value="Item restituito: &quot;\&quot;%PDF-1.4\\n%\\u00f6\\u00e4\\u00fc\\u00df\\n1 0 obj\\n&lt;&lt;\\n/Type /Catalog\\n/Version /1.4\\n/Pages 2 0 R\\n&gt;&gt;\\nendobj\\n2 0 obj\\n&lt;&lt;\\n/Type /Pages\\n/Kids [3 0 R]\\n/Count 1\\n&gt;&gt;\\nendobj\\n3 0 obj\\n&lt;&lt;\\n/Type /Page\\n/MediaBox [0.0 0.0 595.27563 841.8898]\\n/Parent 2 0 R\\n/Contents 4 0 R\\n/Resources 5 0 R\\n&gt;&gt;\\nendobj\\n4 0 obj\\n&lt;&lt;\\n/Length 1084\\n/Filter /FlateDecode\\n&gt;&gt;\\nstream\\r\\nx\\u009c\\u00a5VKo\\u00e36\\u0010\\u00be\\u00fbW\\u00f0R\\u00c0\\u000b4\\n\\u00df\\u0014\\u008b4\\u0085\\\&quot;K\\u00a9\\u0081l\\u00b2\\u00b0\\u00d5\\u00db^\\u0084X6X\\u00c8R*\\u00cb)\\u0090_\\u00df!%[t\\u0012o\\u0013\\u00ad\\u000f\\u00a64\\u001a\\u00ce\\u00e3\\u00fbf\\u0086\\u00c4\\u0081\\u00c0DK\\u0084_\\u00ad\\u00cdf\\u00f2ZtX\\u0017\\u00b7\\u0093\\u009bl\\u00c29RZ\\u0005a\\u00a8\\u0095B\\u00d9\\n\\u00b4\\u0089\\u00a0\\u009a\\u0083\\u0016g\\u0084)\\u00bbjL\\u00ad\\u009d\\u00cb\\u0094 \\u00c2P\\u00b6\\u009e\\\\\\t&amp;\\u00b5L\\u0014\\u0097B\\u00c1\\u0013\\u00c5*\\u008e\\u00f05\\u00ca\\u00fe\\u009e\\b\\u0006\\u00ea\\u0002\\u00e1\\u008fZ\\u009ab&amp;\\u00b4\\u00feb\\u00b72\\u0019\\u0010\\u00fe\\u00f1\\u009dW\\u0011\\u00a6\\u00b3\\u00de+!\\u0081\\u0010\\u00ea\\u0013^\\u00e3h\\u00b9\\u008cP\\u009c\\u00dcg\\u008b\\u00e8.A7\\u00d1}\\u001c\\u00b9 \\u0088\\u0002}\\u00aa\\u00b5\\u00ee\\u008c%\\u00d9\\u0001\\u00a2\\u0090\\u00f9\\u0010a\\u0081uh\\u0081d\\u00f0\\u0083U2M\\u0007\\u001f\\u00d8\\u00c5\\u00c7\\u00b9$\\u0080\\u0010\\u0001t\\u00b8\\u00a2\\u0080\\u00d7\\u00cc\\u00a2\\u00e5\\u009eE\\u0084Y\\u00d4\\u00c7\\u00ae mv\\b\\u00fd,\\u0087\\u0097)\\u00ed\\u00edN)\\u00a6\\u00f4\\u0002\\u00cb\\u000b\\u0086]\\u00c4\\u0082\\u001ca\\u001b\\u00a2\\u00e5\\u00e4s\\u0084N\\u0017f\\u00b7/\\u00db\\u00bc\\u00adQ\\u00b13m\\u00ed,\\u0087:8\\u0080\\n\\u0096q\\u0010\\ntk\\u0017\\u00f4\\u00af\\u00f3Ai@\\u00c1\\u0087F\\u00db\\u0089\\u0080 \\u00a8\\u0012\\u0092y\\u00d2r\\u00b2\\u00fc\\u0011P\\u0010\\u00e8\\u0080\\u0015\\u0098\\u0093\\u009a\\u00f7\\u001b\\u00c1\\u00dd49\\u0006\\u00d1\\u00e54\\u00a8R\\u00c2\\u0002\\u00acI\\u00a8^\\u00ed\\u00f8Z\\u00af\\u00cc\\u00da&lt;\\u00da\\fV\\u00f9\\u00bb;YH\\u0003\\u00122%\\u00ce\\u00ef4\\u00e5a\\u00e7\\u000f\\u00a8pF\\u00a9\\u0017y\\u0088=kq]\\u00ad\\u00ebf[\\u00a0\\u00bcD\\u008bbS\\u0097\\u00f9\\u00b6\\u00a8\\u00c0\\u00f4IH\\u00f4m2'F\\u0096\\u00df\\u0092Et?\\u009b?\\u00a0\\u00db\\u00f9_w\\u00f3\\u0087w7{\\u00f9\\u009cl\\u00ee\\u00ea#\\u00bc\\u00c0@\\u00b9\\u00fe\\r\\u00d3!\\u00a5sup\\u00e6K7\\u001f\\u0086\\\&quot;\\u00b1\\u00b9\\u00b2\\u00d0\\u00f3\\u0094\\u00cd\\u00b3\\u0087\\u00bb\\u00f9`\\u00ff\\u00b4@$\\u00e5\\u00ef\\u0014\\u00c8 \\u00ed\\n\\u00e4\\\\LG\\u00ea\\u00c0\\\\\\u00ef\\u001b3\\u00cfw\\u0014\\u00a0\\u00af\\u00f5\\u00b3\\u00b1\\u00e0\\u00e6/\\u00a6\\u00ae\\n\\u00f4g\\u0016\\u000f\\u00a1\\u00fc\\u007f\\u00dduv\\u0005G\\\&quot;\\u0094\\u0001\\u000fuH\\u00ac\\u00dd+\\u001e\\u00db\\u008e\\u0095L\\u00c2\\n\\u00dd\\u00ca\\u00a4\\u00a0\\u0098\\u00cf\\u0004\\u00e5\\u0014V*\\u0089L\\u00e0\\u001bhp\\\&quot;\\u00edO\\u0083\\u009e&gt;\\u00f4yb'!SC\\u00dfK\\u00d0\\u008fej\\u00bb_E*:\\u00c8\\u00c1\\u0002\\u00c8\\u00ec\\u001c\\u0080i\\u0000\\u0012;\\u0019\\u00bai\\n{0H\\u00a9\\u009b\\u0019\\u00dd\\u00d7\\u0014\\u00f4\\u00c1\\u008b\\u00b5\\fZ\\u00de\\f\\u00019\\u0097\\u00fazT\\u00ca\\u008a\\u000e)O\\u001b\\u00b3.\\u001a\\u0087d\\u00fd\\u00c7g\\u00ea\\u00bf3'C$D\\u00e8\\u0099\\u008b\\u00eb\\u00a6)\\u00da6G\\u00cfyY7\\u00e6\\u00e5\\u00a5\\u00e3g\\u001c7Ly\\u00dc\\u00c0\\u009b\\u00e8\\u00f0\\u00f10K\\u001d2\\u00a9T\\u001d\\u0013\\u001d*N\\u00a6A\\u0096\\u00c0\\u00bfe\\u00899\\u00ec50\\u00a2\\u0015O0K\\u00afG%J\\u0099\\u0097\\u00e8\\u00b2\\u00de\\u0094&amp;GU]\\u00a1\\u00dd\\u00fe\\u00a9hr\\u00c8\\u00f9\\u00fb\\u00f4\\u008a\\u00e0_\\u00f1/\\u00df\\u00bf\\u008c\\u00cb\\u0017\\u00d3\\u000f\\u00e4\\u00dbg\\b\\u00ef\\u00ee-uU\\u00a3S+\\u00b3\\u00b5G!o\\u00a8\\u009d\\u00ae\\u0016\\u00ed^[Y \\u00b3(\\u00e8\\u0091\\u0099\\u00f3\\u00d0\\u00a78\\u00cb\\u009bM\\u00d1\\u00fa\\u0099\\u001bt\\u0089z\\u00e9Q\\u00f2\\b\\u009fWESor\\u0094\\u009a*\\u00af^\\u00f2Q\\u0098p\\u00a9|\\u00d0\\u009d\\u00f5n\\u00a6\\u00ee:\\u0002V\\u0006\\u00ad\\u009b\\u00e2\\u009f}\\u0001\\u001e\\u00c6\\u00150\\u0017\\u001f\\u00e0\\u00f5w\\\&quot;\\u00c6\\u00d2\\u00ca\\u00d9\\u00cf\\u00d1\\u00eaJ{fK\\u00d7j\\u00c0\\u00f0\\u00e8w\\u001fJz\\u0018\\u001b\\u00fd\\u00a8\\u00b0\\u0003\\u0087\\u0001\\u00dd!\\u00bc\\u001f-\\u00db\\u00b1\\u00e3\\u00c6\\u0097\\u00f3\\u00e8\\u00f6G\\u00f6;\\u00c8\\u00c4\\u00d8\\u00b2 ~Y\\u00dc\\u0099\\u00ad\\u0001\\u00de\\u00fd\\u00b2\\u0018\\u0005\\u0017\\u00d3&gt;\\u00e3\\u00df\\u009abg\\u00a9\\u00b5&lt;\\u00ef\\u00dafo\\u00b9\\u00ef\\u009c\\u00ac\\u008a\\u00b6\\u00a8\\u00f6\\u00f0\\u00f2\\u0004*\\u00bb\\u001a\\u00c5\\u00f1\\u00cd8\\u00feY\\u00e8\\u00f3\\u007f_\\u008f\\u008bZ\\u00d23uZZ\\\\\\n\\u001b\\u00ff\\u00f6\\u00cd\\u009152`\\u00fe\\u0006\\u00f7\\u00c2\\u00c7}d\\u0006\\u00d4\\u00c7}a \\u00d0\\u0006\\u00aeSE\\u00d9\\u009b\\u00fd\\u0089#\\u0002Nw\\u001fa\\u00a0k_\\u00f9VG\\u00c5K\\u00b5\\u00dfV\\u00fcX\\u00e2\\u00ae\\u00b8Sh\\u009a\\u00b8?\\t\\u00d2\\u00ae\\u00a5\\u008eg\\u00b3\\u00d5\\u0014\\u00ee\\u00fcvg,\\u00b4\\u00dcAj\\u00a7\\u00a4=\\u00af\\u0013wr{\\u00e72&lt;q\\u00d7^\\u0089\\u00f3B\\u00ac\\u00d5\\u00e1\\u00ac9\\u00db\\u00d0\\u00c2\\u00b6\\u00a3\\u00d7\\u00be\\u00e2\\u00d5-!\\u001du~S\\u00e5\\u00d3\\u00df\\u0016\\u00db\\u00a7b\\u00d7\\u009ag\\u0007%\\u00dc&lt;[\\u00fb\\u00ec\\u00ae\\u00b3\\u00d0\\u0019\\u00f5\\u00a3\\u00eb\\rh\\u0091g\\u00b3s\\u00b7\\u00e3\\u0093\\u008b\\u00e98:\\u00a9\\u00e4''\\u00be-\\u0094\\u00b2\\u00ac\\u00d1\\u00c6\\u00d4M\\u0095\\u0097\\u0006\\u00a6&gt;\\u0082\\u0082t4\\u00d7\\u00ef\\u00f1\\u00fc\\u001f\\u00d4\\u00a4e$\\r\\nendstream\\nendobj\\n5 0 obj\\n&lt;&lt;\\n/Font 6 0 R\\n&gt;&gt;\\nendobj\\n6 0 obj\\n&lt;&lt;\\n/F1 7 0 R\\n/F2 8 0 R\\n&gt;&gt;\\nendobj\\n7 0 obj\\n&lt;&lt;\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica-Bold\\n/Encoding /WinAnsiEncoding\\n&gt;&gt;\\nendobj\\n8 0 obj\\n&lt;&lt;\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n/Encoding /WinAnsiEncoding\\n&gt;&gt;\\nendobj\\nxref\\n0 9\\n0000000000 65535 f\\r\\n0000000015 00000 n\\r\\n0000000078 00000 n\\r\\n0000000135 00000 n\\r\\n0000000254 00000 n\\r\\n0000001413 00000 n\\r\\n0000001446 00000 n\\r\\n0000001487 00000 n\\r\\n0000001589 00000 n\\r\\ntrailer\\n&lt;&lt;\\n/Root 1 0 R\\n/ID [&lt;6579F16454F67448E20948EA86CE70DC&gt; &lt;6579F16454F67448E20948EA86CE70DC&gt;]\\n/Size 9\\n&gt;&gt;\\nstartxref\\n1686\\n%%EOF\\n\&quot;&quot;"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="date" type="D" value="46157.5459388079"/>
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 1">
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="20"/>
+			<Prp name="message" type="S" value="--- STEP 1: Chiamata al servizio"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="date" type="D" value="46157.5459352662"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="34"/>
+			<Prp name="message" type="S" value="--- STEP 2: Validazione della response"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="date" type="D" value="46157.5459386227"/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 4">
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="35"/>
+			<Prp name="message" type="S" value="Il servizio /v1/riskaudit/summaries/202206_03599/print ha risposto con status: 200 OK"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="date" type="D" value="46157.5459385301"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="30"/>
+			<Prp name="message" type="S" value="Response status CORRETTO."/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="date" type="D" value="46157.5459385301"/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="Response status text: OK&#xA;&#xA;Response body:&#xA;%PDF-1.4&#xA;%öäüß&#xA;1 0 obj&#xA;&lt;&lt;&#xA;/Type /Catalog&#xA;/Version /1.4&#xA;/Pages 2 0 R&#xA;&gt;&gt;&#xA;endobj&#xA;2 0 obj&#xA;&lt;&lt;&#xA;/Type /Pages&#xA;/Kids [3 0 R]&#xA;/Count 1&#xA;&gt;&gt;&#xA;endobj&#xA;3 0 obj&#xA;&lt;&lt;&#xA;/Type /Page&#xA;/MediaBox [0.0 0.0 595.27563 841.8898]&#xA;/Parent 2 0 R&#xA;/Contents 4 0 R&#xA;/Resources 5 0 R&#xA;&gt;&gt;&#xA;endobj&#xA;4 0 obj&#xA;&lt;&lt;&#xA;/Length 1084&#xA;/Filter /FlateDecode&#xA;&gt;&gt;&#xA;stream&#xA;x¥VKoã6¾ûWðRÀ4&#xA;ß4&quot;K©l²°ÕÛ^X6XÈR*Ë)_ß!%[to¦4ÎãûfÄÀDK_ÍfòZtX·lÂ9RZa¨BÙ&#xA;´ g)»jLË ÂP¶\	&amp;µLBÁÅ*ð5ÊþêáZb&amp;´þb·2þñW¦³Þ+!ê^ãh¹PÜgè.A7Ñ}¹ }ªµî%Ù¢ùauhdðU2MØÅÇ¹$t¸¢×Ì¢åEYÔÇ® mvý,)ííN)¦ôË]Äa¢åäsNf·/Û¼Q±3mí,:8&#xA;q&#xA;tkô¯óAi@ÁFÛ ¨yÒr²üPè÷ÁÝ49Ñå4¨RÂ¬I¨^íøZ¯ÌÚ&lt;ÚVù»;YH2%Îï4åaç¨pF©y=kq]ëf[ ¼DbSù¶¨ÀôIHôm2'FßEt?? Ûù_wów7{ùlîê#¼À@¹þ&#xA;Ó!¥supæK7&quot;±¹²ÐóÍ³»ù`ÿ´@$åïÈ í&#xA;ä\LGêÀ\ï3Ïw ¯õ³±àæ/¦®&#xA;ôg¡üÝuvG&quot;uH¬Ý+ÛLÂ&#xA;ÝÊ¤ ÏåV*Làhp&quot;íO&gt;ôyb'!SCßKÐej»_E*:ÈÁÈìi&#xA;&#xA;All response headers:&#xA;Date: Fri, 15 May 2026 11:02:50 GMT&#xA;Content-Length: 2006&#xA;Content-Type: application/pdf&#xA;Server: istio-envoy&#xA;content-disposition: inline; filename=&quot;sintesi_03599_20260515_110250.pdf&quot;; filename*=UTF-8''sintesi_03599_20260515_110250.pdf&#xA;x-envoy-upstream-service-time: 173&#xA;&#xA;"/>
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="message" type="S" value="The 'GET' request to 'https://pwm-api.integrazione.servizi.allitude.it/v1/riskaudit/summaries/202206_03599/print' was sent with the status code 200."/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="date" type="D" value="46157.5459383333"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+	</Node>
+</Nodes>

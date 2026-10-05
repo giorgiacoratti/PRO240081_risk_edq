@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="stack"/>
+		<Node name="message 1">
+			<Prp name="line no" type="I" value="20"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="46157.5459262731"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="message" type="S" value="--- STEP 1: Chiamata al servizio"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="id" type="I" value="1"/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="line no" type="I" value="30"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="46157.5459276968"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="message" type="S" value="Response status CORRETTO."/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="id" type="I" value="5"/>
+		</Node>
+		<Node name="message 8">
+			<Prp name="line no" type="I" value="51"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="46157.5459279282"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="message" type="S" value="Item restituito: {&#xA;    &quot;id&quot;: &quot;202206_03599&quot;,&#xA;    &quot;legalEntity&quot;: {&#xA;        &quot;abi&quot;: &quot;03599&quot;,&#xA;        &quot;name&quot;: &quot;CASSA CENTRALE BANCA&quot;&#xA;    },&#xA;    &quot;state&quot;: &quot;CLOSED&quot;,&#xA;    &quot;result&quot;: &quot;Conforme al Regolamento &quot;,&#xA;    &quot;modifiedBy&quot;: &quot;SPERANDIO GIULIO&quot;,&#xA;    &quot;modifiedTms&quot;: &quot;2022-08-04T09:02:34.000+00:00&quot;,&#xA;    &quot;sections&quot;: [&#xA;        {&#xA;            &quot;id&quot;: 1,&#xA;            &quot;name&quot;: &quot;SECURITIES&quot;,&#xA;            &quot;subsections&quot;: [&#xA;                {&#xA;                    &quot;id&quot;: 1,&#xA;                    &quot;name&quot;: &quot;A. Movimentazione HTC&quot;,&#xA;                    &quot;questions&quot;: [&#xA;                        {&#xA;                            &quot;id&quot;: 0,&#xA;                            &quot;name&quot;: &quot;La classe MRB Banca Affiliata \u00c3\u00a9 stata valorizzata correttamente per tutto il semestre di riferimento?&quot;,&#xA;                            &quot;answer&quot;: {&#xA;                                &quot;id&quot;: 0,&#xA;                                &quot;name&quot;: &quot;Corretta valorizzazione&quot;,&#xA;                                &quot;note&quot;: null,&#xA;                                &quot;modifiedBy&quot;: null,&#xA;                                &quot;modifiedTms&quot;: null&#xA;                            },&#xA;                            &quot;position&quot;: 1,&#xA;                            &quot;prefilled&quot;: null&#xA;                        },&#xA;                        {&#xA;                            &quot;id&quot;: 1,&#xA;                            &quot;name&quot;: &quot;Superamento soglia di significativit\u00c3\u00a0?&quot;,&#xA;                            &quot;answer&quot;: {&#xA;                                &quot;id&quot;: 0,&#xA;                                &quot;name&quot;: &quot;Soglia non superata (&lt;10,0%)&quot;,&#xA;                                &quot;note&quot;: null,&#xA;                                &quot;modifiedBy&quot;: null,&#xA;                                &quot;modifiedTms&quot;: null&#xA;                            },&#xA;                            &quot;position&quot;: 1,&#xA;                            &quot;prefilled&quot;: null&#xA;                        },&#xA;                        {&#xA;                            &quot;id&quot;: 12,&#xA;                            &quot;name&quot;: &quot;Superamento di uno o pi\u00c3\u00b9 target strategici?&quot;,&#xA;                            &quot;answer&quot;: {&#xA;                                &quot;id&quot;: 33,&#xA;                                &quot;name&quot;: &quot;Target non superati / Target superati con deroga Finanza&quot;,&#xA;                                &quot;note&quot;: null,&#xA;                                &quot;modifiedBy&quot;: null,&#xA;                                &quot;modifiedTms&quot;: null&#xA;                            },&#xA;                            &quot;position&quot;: 1,&#xA;                            &quot;prefilled&quot;: null&#xA;                        },&#xA;                        {&#xA;                            &quot;id&quot;: 2,&#xA;                            &quot;name&quot;: &quot;Superamento soglia di frequenza?&quot;,&#xA;                            &quot;answer&quot;: {&#xA;                                &quot;id&quot;: 0,&#xA;                                &quot;name&quot;: &quot;Soglia non superata (&lt;=15%)&quot;,&#xA;                                &quot;note&quot;: null,&#xA;                                &quot;modifiedBy&quot;: null,&#xA;                                &quot;modifiedTms&quot;: null&#xA;                            },&#xA;                            &quot;position&quot;: 2,&#xA;                            &quot;prefilled&quot;: null&#xA;                        },&#xA;                        {&#xA;                            &quot;id&quot;: 7,&#xA;                            &quot;name&quot;: &quot;Superamento di uno o pi\u00c3\u00b9 limiti operativi per il rischio di concentrazione?&quot;,&#xA;                            &quot;answer&quot;: {&#xA;                                &quot;id&quot;: 23,&#xA;                                &quot;name&quot;: &quot;Limiti non superati&quot;,&#xA;                                &quot;note&quot;: null,&#xA;                                &quot;modifiedBy&quot;: null,&#xA;                                &quot;modifiedTms&quot;: null&#xA;                            },&#xA;                            &quot;position&quot;: 2,&#xA;                            &quot;prefilled&quot;: null&#xA;                        },&#xA;                        {&#xA;                            &quot;id&quot;: 11,&#xA;                            &quot;name&quot;: &quot;Presenza di strumenti non detenuti presso CCB?&quot;,&#xA;                            &quot;answer&quot;: {&#xA;                                &quot;id&quot;: 31,&#xA;                                &quot;name&quot;: &quot;No&quot;,&#xA;                                &quot;note&quot;: null,&#xA;                                &quot;modifiedBy&quot;: null,&#xA;                                &quot;modifiedTms&quot;: null&#xA;                            },&#xA;                            &quot;position&quot;: 2,&#xA;                            &quot;prefilled&quot;: null&#xA;                        },&#xA;                        {&#xA;                            &quot;id&quot;: 3,&#xA;                            &quot;name&quot;: &quot;Superamento limite di movimentazione HTC?&quot;,&#xA;                            &quot;answer&quot;: {&#xA;                                &quot;id&quot;: 8,&#xA;                                &quot;name&quot;: &quot;Limite non superato&quot;,&#xA;                                &quot;note&quot;: null,&#xA;                                &quot;modifiedBy&quot;: null,&#xA;                                &quot;modifiedTms&quot;: null&#xA;                            },&#xA;                            &quot;position&quot;: 3,&#xA;                            &quot;prefilled&quot;: null&#xA;                        },&#xA;                        {&#xA;                            &quot;id&quot;: 9,&#xA;                            &quot;name&quot;: &quot;Rientro del superamento?&quot;,&#xA;                            &quot;answer&quot;: {&#xA;                                &quot;id&quot;: 18,&#xA;                                &quot;name&quot;: &quot;Nessun superamento&quot;,&#xA;                                &quot;note&quot;: null,&#xA;                                &quot;modifiedBy&quot;: null,&#xA;                                &quot;modifiedTms&quot;: null&#xA;                            },&#xA;                            &quot;position&quot;: 4,&#xA;                            &quot;prefilled&quot;: null&#xA;                        },&#xA;                        {&#xA;                            &quot;id&quot;: 5,&#xA;                            &quot;name&quot;: &quot;I controlli sono stati effettuati giornalmente ed in caso di superamento del limite \u00c3\u00a9 stato tempestivamente attivato il processo previsto dal Regolamento?&quot;,&#xA;                            &quot;answer&quot;: {&#xA;                                &quot;id&quot;: 0,&#xA;                                &quot;name&quot;: &quot;Controllo giornaliero e nessuno superamento&quot;,&#xA;                                &quot;note&quot;: null,&#xA;                                &quot;modifiedBy&quot;: null,&#xA;                                &quot;modifiedTms&quot;: null&#xA;                            },&#xA;                            &quot;position&quot;: 5,&#xA;                            &quot;prefilled&quot;: null&#xA;                        }&#xA;                    ]&#xA;                }&#xA;            ]&#xA;        }&#xA;    ],&#xA;    &quot;ccbNote&quot;: null,&#xA;    &quot;bankNote&quot;: null,&#xA;    &quot;quarterDate&quot;: &quot;2022-06-30&quot;,&#xA;    &quot;historical&quot;: true&#xA;}"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="id" type="I" value="8"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 3">
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="date" type="D" value="46157.5459274653"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value="Response status text: OK&#xA;&#xA;Response body:&#xA;{&quot;id&quot;:&quot;202206_03599&quot;,&quot;legalEntity&quot;:{&quot;abi&quot;:&quot;03599&quot;,&quot;name&quot;:&quot;CASSA CENTRALE BANCA&quot;},&quot;state&quot;:&quot;CLOSED&quot;,&quot;result&quot;:&quot;Conforme al Regolamento &quot;,&quot;modifiedBy&quot;:&quot;SPERANDIO GIULIO&quot;,&quot;modifiedTms&quot;:&quot;2022-08-04T09:02:34.000+00:00&quot;,&quot;sections&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;SECURITIES&quot;,&quot;subsections&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;A. Movimentazione HTC&quot;,&quot;questions&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;La classe MRB Banca Affiliata Ã© stata valorizzata correttamente per tutto il semestre di riferimento?&quot;,&quot;answer&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Corretta valorizzazione&quot;,&quot;note&quot;:null,&quot;modifiedBy&quot;:null,&quot;modifiedTms&quot;:null},&quot;position&quot;:1,&quot;prefilled&quot;:null},{&quot;id&quot;:1,&quot;name&quot;:&quot;Superamento soglia di significativitÃ ?&quot;,&quot;answer&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Soglia non superata (&lt;10,0%)&quot;,&quot;note&quot;:null,&quot;modifiedBy&quot;:null,&quot;modifiedTms&quot;:null},&quot;position&quot;:1,&quot;prefilled&quot;:null},{&quot;id&quot;:12,&quot;name&quot;:&quot;Superamento di uno o piÃ¹ target strategici?&quot;,&quot;answer&quot;:{&quot;id&quot;:33,&quot;name&quot;:&quot;Target non superati / Target superati con deroga Finanza&quot;,&quot;note&quot;:null,&quot;modifiedBy&quot;:null,&quot;modifiedTms&quot;:null},&quot;position&quot;:1,&quot;prefilled&quot;:null},{&quot;id&quot;:2,&quot;name&quot;:&quot;Superamento soglia di frequenza?&quot;,&quot;answer&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Soglia non superata (&lt;=15%)&quot;,&quot;note&quot;:null,&quot;modifiedBy&quot;:null,&quot;modifiedTms&quot;:null},&quot;position&quot;:2,&quot;prefilled&quot;:null},{&quot;id&quot;:7,&quot;name&quot;:&quot;Superamento di uno o piÃ¹ limiti operativi per il rischio di concentrazione?&quot;,&quot;answer&quot;:{&quot;id&quot;:23,&quot;name&quot;:&quot;Limiti non superati&quot;,&quot;note&quot;:null,&quot;modifiedBy&quot;:null,&quot;modifiedTms&quot;:null},&quot;position&quot;:2,&quot;prefilled&quot;:null},{&quot;id&quot;:11,&quot;name&quot;:&quot;Presenza di strumenti non detenuti presso CCB?&quot;,&quot;answer&quot;:{&quot;id&quot;:31,&quot;name&quot;:&quot;No&quot;,&quot;note&quot;:null,&quot;modifiedBy&quot;:null,&quot;modifiedTms&quot;:null},&quot;position&quot;:2,&quot;prefilled&quot;:null},{&quot;id&quot;:3,&quot;name&quot;:&quot;Superamento limite di movimentazione HTC?&quot;,&quot;answer&quot;:{&quot;id&quot;:8,&quot;name&quot;:&quot;Limite non superato&quot;,&quot;note&quot;:null,&quot;modifiedBy&quot;:null,&quot;modifiedTms&quot;:null},&quot;position&quot;:3,&quot;prefilled&quot;:null},{&quot;id&quot;:9,&quot;name&quot;:&quot;Rientro del superamento?&quot;,&quot;answer&quot;:{&quot;id&quot;:18,&quot;name&quot;:&quot;Nessun superamento&quot;,&quot;note&quot;:null,&quot;modifiedBy&quot;:null,&quot;modifiedTms&quot;:null},&quot;position&quot;:4,&quot;prefilled&quot;:null},{&quot;id&quot;:5,&quot;name&quot;:&quot;I controlli sono stati effettuati giornalmente ed in caso di superamento del limite Ã© stato tempestivamente attivato il processo previsto dal Regolamento?&quot;,&quot;answer&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Controllo giornaliero e nessuno superamento&quot;,&quot;note&quot;:null,&quot;modifiedBy&quot;:null,&quot;modifiedTms&quot;:null},&quot;position&quot;:5,&quot;prefilled&quot;:null}]}]}],&quot;ccbNote&quot;:null,&quot;bankNote&quot;:null,&quot;quarterDate&quot;:&quot;2022-06-30&quot;,&quot;historical&quot;:true}&#xA;&#xA;All response headers:&#xA;Date: Fri, 15 May 2026 11:02:49 GMT&#xA;Transfer-Encoding: chunked&#xA;Content-Type: application/json&#xA;Server: istio-envoy&#xA;x-envoy-upstream-service-time: 15&#xA;&#xA;"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="message" type="S" value="The 'GET' request to 'https://pwm-api.integrazione.servizi.allitude.it/v1/riskaudit/summaries/202206_03599' was sent with the status code 200."/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="id" type="I" value="3"/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="line no" type="I" value="34"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="46157.5459276968"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="message" type="S" value="--- STEP 2: Validazione della response"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="id" type="I" value="6"/>
+		</Node>
+		<Node name="message 9">
+			<Prp name="line no" type="I" value="55"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="46157.5459280903"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="message" type="S" value="E' stata salvata la domanda con id: 12"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="id" type="I" value="9"/>
+		</Node>
+		<Node name="message 7">
+			<Prp name="line no" type="I" value="50"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="46157.5459278472"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="message" type="S" value="La response del servizio rispetta lo schema atteso SummaryDTO"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="id" type="I" value="7"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="date" type="D" value="46157.5459263889"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="message" type="S" value="Sending the 'GET' request to 'https://pwm-api.integrazione.servizi.allitude.it/v1/riskaudit/summaries/202206_03599'."/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="id" type="I" value="2"/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="line no" type="I" value="35"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="date" type="D" value="46157.5459276736"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="message" type="S" value="Il servizio /v1/riskaudit/summaries/202206_03599 ha risposto con status: 200 OK"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="id" type="I" value="4"/>
+		</Node>
+		<Node name="message 10">
+			<Prp name="line no" type="I" value="61"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="46157.545928287"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="message" type="S" value="E' stata salvata la risposta con id: 33"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="id" type="I" value="10"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="line no" type="I" value="12"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="46157.5459262731"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="message" type="S" value="--- STEP 0: Importo le project variables ---"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="id" type="I" value="0"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{84C15E27-CD9D-498E-A2BC-0BEC39AEBA49}"/>
+			<Prp name="unit 1" type="S" value="{4BCB0703-C08A-4F1B-BB67-E3051409EA3B}"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+	</Node>
+</Nodes>

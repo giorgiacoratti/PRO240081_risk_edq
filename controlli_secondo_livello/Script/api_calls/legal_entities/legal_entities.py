@@ -1,0 +1,17 @@
+﻿import generic_calls, json
+
+base_url = ProjectSuite.Variables.base_path
+token = ProjectSuite.Variables.token_CC9025
+  
+  
+  
+""" 
+  Metodo che crea una POST request e la invia all'endpoint al path
+  /v1/riskaudit/legalEntities/search
+  @param: body_obj
+"""
+def POST_legal_entities_search(body_obj) :
+  path = '/v1/riskaudit/legalEntities/search'
+  url = base_url+path
+  body_string = json.dumps(body_obj)
+  return generic_calls.send_request_generic('POST', url, token, path, body=body_string)

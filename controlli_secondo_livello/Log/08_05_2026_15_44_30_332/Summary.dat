@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test6">
+						<Node name="warnings">
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="Messaggio di errore: {&quot;id&quot;:&quot;0816efe1-488b-4135-aaee-44ec8b2385f5&quot;,&quot;type&quot;:&quot;SYSTEM_ERROR&quot;,&quot;title&quot;:&quot;Generic back-end system error&quot;,&quot;status&quot;:500,&quot;message&quot;:&quot;common_error_toast_body&quot;,&quot;errors&quot;:null,&quot;messageData&quot;:null}"/>
+							</Node>
+						</Node>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="Response status NON CORRETTO. Lo status PREVISTO era: 200"/>
+							</Node>
+						</Node>
+						<Prp name="durationwithoutchildren" type="I" value="644"/>
+						<Prp name="name" type="S" value="TC0015_POST_SummariesSearch"/>
+						<Prp name="starttime" type="D" value="46150.6559441435"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBDADcAMwAwADIAMwBDAEQALQBBADcAMwBFAC0ANAAwADkANQAtAEIARQBEAEYALQA1ADkAMwBBAEEAQgBCAEUARQA2ADAAOAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="duration" type="I" value="644"/>
+					</Node>
+					<Node name="test10">
+						<Node name="warnings">
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="La risposta del servizio NON rispetta lo schema atteso, verificare"/>
+							</Node>
+							<Node name="warning1">
+								<Prp name="msg" type="S" value="Response body: {&#xA;    &quot;toCompileNumber&quot;: 68,&#xA;    &quot;compiledNumber&quot;: 0,&#xA;    &quot;closedNumber&quot;: 0,&#xA;    &quot;quarterDate&quot;: &quot;2026-03-31&quot;,&#xA;    &quot;publishDate&quot;: null&#xA;}"/>
+							</Node>
+							<Node name="warning2">
+								<Prp name="msg" type="S" value="Schema atteso: &quot;Schema({'toCompileNumber': &lt;class 'int'&gt;, 'compiledNumber': &lt;class 'int'&gt;, 'closedNumber': &lt;class 'int'&gt;, 'quarterDate': &lt;class 'str'&gt;, 'publishDate': &lt;class 'str'&gt;})&quot;"/>
+							</Node>
+						</Node>
+						<Node name="errors"/>
+						<Prp name="durationwithoutchildren" type="I" value="154"/>
+						<Prp name="name" type="S" value="TC0021_GET_SummariesStats"/>
+						<Prp name="starttime" type="D" value="46150.6559645255"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA1ADEANQBEAEMANQA2ADQALQBCADIAQwA3AC0ANAAyADkAMQAtADgAMgA4AEQALQBEADUANQAwAEIAQwAxADkAOAA0ADUAMwB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="1"/>
+						<Prp name="duration" type="I" value="154"/>
+					</Node>
+					<Node name="test7">
+						<Node name="warnings">
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="Messaggio di errore: {&quot;id&quot;:&quot;b6a7810e-ba7a-4d4c-8423-83580de14334&quot;,&quot;type&quot;:&quot;SYSTEM_ERROR&quot;,&quot;title&quot;:&quot;Generic back-end system error&quot;,&quot;status&quot;:500,&quot;message&quot;:&quot;common_error_toast_body&quot;,&quot;errors&quot;:null,&quot;messageData&quot;:null}"/>
+							</Node>
+						</Node>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="Response status NON CORRETTO. Lo status PREVISTO era: 200"/>
+							</Node>
+						</Node>
+						<Prp name="durationwithoutchildren" type="I" value="448"/>
+						<Prp name="name" type="S" value="TC0017_POST_SummariesExport"/>
+						<Prp name="starttime" type="D" value="46150.6559517014"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA1AEUAMwA0ADcAMAAxAEIALQBEADAARQA5AC0ANAAxAEYAMgAtAEIARQBGADcALQAxADUAOQAzAEIAOABDADQANgA1AEQAMAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="duration" type="I" value="448"/>
+					</Node>
+					<Node name="test12">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="durationwithoutchildren" type="I" value="209"/>
+						<Prp name="name" type="S" value="TC0023_GET_SummariesLogs"/>
+						<Prp name="starttime" type="D" value="46150.6559701273"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAwADAAOABEAEMAMQA1ADgALQA1ADIANwA1AC0ANAA1AEUAOAAtAEIAMABDAEUALQA2ADAANgBFADUAMwAzADgAMQAyADUAQwB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="duration" type="I" value="209"/>
+					</Node>
+					<Node name="test5">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="summaries_id non presente tra le project variables, verificare!"/>
+							</Node>
+						</Node>
+						<Prp name="durationwithoutchildren" type="I" value="456"/>
+						<Prp name="name" type="S" value="TC0012_PUT_SummariesNote"/>
+						<Prp name="starttime" type="D" value="46150.6559387616"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBGAEEAMwBCADMAOQAxADMALQA1AEQAMwA4AC0ANABFADIANwAtADkAQwAxADkALQBFADgAMwBEADYAMgA4ADgANwA2AEQAOAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="duration" type="I" value="456"/>
+					</Node>
+					<Node name="test3">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="subsection_id e question_id non presenti tra le project variables, verificare!"/>
+							</Node>
+						</Node>
+						<Prp name="durationwithoutchildren" type="I" value="515"/>
+						<Prp name="name" type="S" value="TC0011_PUT_SubSectionAnswers"/>
+						<Prp name="starttime" type="D" value="46150.6559325"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA4AEYARABFADYAQwBGADgALQBCADgARgA3AC0ANAAxADUANQAtADkANQBCADQALQA5ADQANQBBADkARgBEADgAQwAwAEEAMgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="duration" type="I" value="515"/>
+					</Node>
+					<Node name="test8">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="summaries_id non presente tra le project variables, verificare!"/>
+							</Node>
+						</Node>
+						<Prp name="durationwithoutchildren" type="I" value="312"/>
+						<Prp name="name" type="S" value="TC0018_GET_SummariesId"/>
+						<Prp name="starttime" type="D" value="46150.6559569907"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBEAEEAMQAyAEMAQgAzAEEALQA2ADAAMwA1AC0ANABFAEMAMAAtAEEARAA4ADIALQBFAEEAMwA5ADYARAA1ADUARABDAEQAQgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="duration" type="I" value="312"/>
+					</Node>
+					<Node name="test11">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="stats_date non presente tra le project variables, verificare!"/>
+							</Node>
+						</Node>
+						<Prp name="durationwithoutchildren" type="I" value="314"/>
+						<Prp name="name" type="S" value="TC0022_GET_SummariesStatsDate"/>
+						<Prp name="starttime" type="D" value="46150.6559663889"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA1ADYAMwBEADUARABCAEIALQBFADAARgAzAC0ANAA1ADQARQAtADkAMwBEAEIALQA2ADcANABFADYANgBCADAAMABEAEQAQQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="duration" type="I" value="314"/>
+					</Node>
+					<Node name="test2">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="durationwithoutchildren" type="I" value="242"/>
+						<Prp name="name" type="S" value="TC0010_PUT_SubSectionQuestions"/>
+						<Prp name="starttime" type="D" value="46150.6559295718"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA2ADQANQBFADMAOABEADMALQAwADQANwBGAC0ANABEAEUARAAtADkARAA0ADkALQA2AEQAMQA5ADAAMQBDAEUARQA0ADUAQgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="duration" type="I" value="242"/>
+					</Node>
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="durationwithoutchildren" type="I" value="1097"/>
+						<Prp name="name" type="S" value="TC0016_POST_SummariesPublish"/>
+						<Prp name="starttime" type="D" value="46150.6559121759"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAzADkAOAA2AEYAMAAwAEEALQBGAEMARgBFAC0ANAA2ADMAMgAtADkANgAzADgALQAzADgANQA0AEMAMgBBADAANgAxADkAOAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="duration" type="I" value="1097"/>
+					</Node>
+					<Node name="test4">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error0">
+								<Prp name="msg" type="S" value="The child test TC0011_PUT_SubSectionAnswers failed"/>
+							</Node>
+						</Node>
+						<Prp name="durationwithoutchildren" type="I" value="225"/>
+						<Prp name="name" type="S" value="TC0020_GET_SummariesSubSection"/>
+						<Prp name="starttime" type="D" value="46150.655925"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA5ADIARgBGADQARQAxADkALQBEAEUANQBBAC0ANAA2ADYANAAtADgANAAwADYALQAzAEUAQgBEAEQAOAAzADAAOQBGAEQAOQB9AC8AewAzAEMAMgBEADAANQA1AEYALQBCAEIAMAA0AC0ANAA2ADAAMgAtAEIANwBCAEQALQAxADIAQQA1AEIANwAzAEYARQBFADcAQQB9AC8AGhHL3v86Z0CLViaRMGjlQwAAAAAvAGUAbQBwAHQAeQA="/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="duration" type="I" value="1175"/>
+					</Node>
+					<Node name="test1">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="durationwithoutchildren" type="I" value="193"/>
+						<Prp name="name" type="S" value="TC0024_GET_SummariesAnswers"/>
+						<Prp name="starttime" type="D" value="46150.6559272454"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAyAEUAQwBBADIAMQA3ADAALQA4ADEARQA3AC0ANABGADMAMwAtAEEAOABCADYALQA4ADkAQgAzADIARQA4AEIAQQA3ADkAOQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="duration" type="I" value="193"/>
+					</Node>
+					<Node name="test9">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="summaries_id non presente tra le project variables, verificare!"/>
+							</Node>
+						</Node>
+						<Prp name="durationwithoutchildren" type="I" value="319"/>
+						<Prp name="name" type="S" value="TC0019_GET_SummariesPrint"/>
+						<Prp name="starttime" type="D" value="46150.655960706"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBFAEUANQBBADUAOAA1ADMALQAwAEIANQA2AC0ANAA1ADcANwAtADkAMgA2AEMALQBDAEMAMQBGADAAQgA2ADUAQQAwAEMAQQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="duration" type="I" value="319"/>
+					</Node>
+				</Node>
+				<Prp name="incompletedtests" type="I" value="0"/>
+				<Prp name="name" type="S" value="controlli_secondo_livello"/>
+				<Prp name="warningtests" type="I" value="1"/>
+				<Prp name="failedtests" type="I" value="8"/>
+				<Prp name="loadtests" type="I" value="0"/>
+				<Prp name="starttime" type="D" value="46150.6559121759"/>
+				<Prp name="duration" type="I" value="5128"/>
+			</Node>
+		</Node>
+		<Prp name="warningtests" type="I" value="1"/>
+		<Prp name="tests" type="I" value="13"/>
+		<Prp name="loadtests" type="I" value="0"/>
+		<Prp name="testname" type="S" value="controlli_secondo_livello: summaries"/>
+		<Prp name="executionstatus" type="I" value="2"/>
+		<Prp name="user" type="S" value="gcoratti"/>
+		<Prp name="starttime" type="D" value="46150.655906794"/>
+		<Prp name="host" type="S" value="8NY1HS3-A081"/>
+		<Prp name="name" type="S" value="PRO240081_risk_edq"/>
+		<Prp name="stop" type="D" value="46150.6559733912"/>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+		<Prp name="incompletedtests" type="I" value="0"/>
+		<Prp name="key" type="S" value="{F3A1569D-9DC8-4EF0-9338-FC58C5385F5B}"/>
+		<Prp name="failedtests" type="I" value="8"/>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+	</Node>
+</Nodes>

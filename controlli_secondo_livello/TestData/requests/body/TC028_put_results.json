@@ -1,0 +1,15 @@
+{
+  "results": [
+    {
+      "resultId": 0,
+      "regScore": {
+        "minScore": 0,
+        "maxScore": 0
+      },
+      "virScore": {
+        "minScore": 0,
+        "maxScore": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row1">
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="name" type="S" value="TC0024_GET_SummariesAnswers [Script\TC0024_GET_SummariesAnswers - TC0024_GET_SummariesAnswers]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="46150.6587024306"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{55752769-71B8-4D45-B18C-AC5E61BFA9A3}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="start time" type="D" value="46150.6587004167"/>
+			</Node>
+			<Node name="row3">
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="name" type="S" value="TC0011_PUT_SubSectionAnswers [Script\TC0011_PUT_SubSectionAnswers - TC0011_PUT_SubSectionAnswers]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="46150.658736412"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="details" type="S" value="{94A5A9FC-576E-4F53-996E-3B7021376610}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="3"/>
+				<Prp name="start time" type="D" value="46150.658729456"/>
+			</Node>
+			<Node name="row2">
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="name" type="S" value="TC0010_PUT_SubSectionQuestions [Script\TC0010_PUT_SubSectionQuestions - TC0010_PUT_SubSectionQuestions]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="46150.6587293403"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="details" type="S" value="{92DD6636-F62F-4DBA-8F3C-682BA4892F5A}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="start time" type="D" value="46150.6587025463"/>
+			</Node>
+			<Node name="row0">
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="name" type="S" value="Script Test Log [TC0020_GET_SummariesSubSection\TC0020_GET_SummariesSubSection]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="46150.6587004167"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{A2E0F010-A6B2-4B54-ABDF-4DB32CF98E76}"/>
+				<Prp name="testdata item" type="B" value="-1"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="start time" type="D" value="46150.6586933333"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

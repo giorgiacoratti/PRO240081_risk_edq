@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row0">
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="name" type="S" value="TC0025_GET_Results [Script\TC0025_GET_Results - TC0025_GET_Results]"/>
+				<Prp name="details" type="S" value="{41D49589-A56F-421E-A5B8-6A9F56310FF5}"/>
+				<Prp name="end time" type="D" value="46147.6161593866"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="start time" type="D" value="46147.6161143866"/>
+			</Node>
+			<Node name="row1">
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="name" type="S" value="TC0026_PUT_Results [Script\TC0026_PUT_Results - TC0026_PUT_Results]"/>
+				<Prp name="details" type="S" value="{BA0E150E-B4E3-45E5-B33E-702978685BC8}"/>
+				<Prp name="end time" type="D" value="46147.6161621296"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="start time" type="D" value="46147.6161594676"/>
+			</Node>
+			<Node name="row2">
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="name" type="S" value="TC0027_POST_ResultsSearch [Script\TC0027_POST_ResultsSearch - TC0027_POST_ResultsSearch]"/>
+				<Prp name="details" type="S" value="{C70337FE-E74E-4532-BB05-FA4ACFC24F67}"/>
+				<Prp name="end time" type="D" value="46147.6161681018"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="start time" type="D" value="46147.6161622106"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>
